@@ -5,6 +5,7 @@
 # Z.CSS
 ## Modern. Minimal. Lightweight. Responsive. CSS framework
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/R3zu3)
+[![Generic badge](https://img.shields.io/badge/figma-project-red.svg)](https://www.figma.com/file/7uH2YP6gkDn5HSJHKbxjN8/Z.CSS)
 [![Generic badge](https://img.shields.io/badge/kanban-status-blue.svg)](https://github.com/R3zu3/z.css/projects/1)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/R3zu3/z.css/issues)
 [![GitHub license](https://img.shields.io/github/license/R3zu3/z.css.svg)](https://github.com/R3zu3/z.css/blob/master/LICENSE)
