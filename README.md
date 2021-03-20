@@ -12,7 +12,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/R3zu3/z.css.svg)](https://GitHub.com/R3zu3/z.css/tags/)
 [![Github all releases](https://img.shields.io/github/downloads/R3zu3/z.css/total.svg)](https://GitHub.com/R3zu3/z.css/releases/)
 ![Profile views](https://gpvc.arturio.dev/r3zu3)
-[![HitCount](http://hits.dwyl.com/r3zu3/zcss.svg)](http://hits.dwyl.com/r3zu3/zcss)
+[![HitCount](http://hits.dwyl.com/R3zu3/zcss.svg)](http://hits.dwyl.com/R3zu3/zcss)
 [![Awesome Badges](https://img.shields.io/badge/badges-awesome-pink.svg)](https://github.com/R3zu3/z.css)
 
 
