@@ -1,0 +1,91 @@
+// /////////////////////////////////////////////////////////////////////////// //
+// ///////////////////////////// COLORS STYLES /////////////////////////////// //
+// /////////////////////////////////////////////////////////////////////////// //
+
+// Base
+
+$base: #08090a;
+$base-inverted: #fff;
+
+// Base Alpha
+
+$base-100: $base;
+$base-a90: rgba(8, 9, 10, 0.9);
+$base-a80: rgba(8, 9, 10, 0.8);
+$base-a70: rgba(8, 9, 10, 0.7);
+$base-a60: rgba(8, 9, 10, 0.6);
+$base-a50: rgba(8, 9, 10, 0.5);
+$base-a40: rgba(8, 9, 10, 0.4);
+$base-a30: rgba(8, 9, 10, 0.3);
+$base-a20: rgba(8, 9, 10, 0.2);
+$base-a10: rgba(8, 9, 10, 0.1);
+$base-a5: rgba(8, 9, 10, 0.05);
+
+// Base Gradient 
+
+$base-90: #202428;
+$base-80: #363d44;
+$base-70: #4d5760;
+$base-60: #64707d;
+$base-50: #7d8a97;
+$base-40: #99a3ad;
+$base-30: #b5bdc4;
+$base-20: #d2d6db;
+$base-10: #eef0f1;
+$base-0: #f9fafa;
+
+// Brand
+
+$accent-brand: #3b49df;
+$accent-brand-darker: #1827ce;
+$accent-brand-lighter: #8d95f2;
+$accent-brand-a10: rgba(59, 73, 223, 0.1);
+
+// Success
+
+$accent-success: #26d9ca;
+$accent-success-darker: #1ab3a6;
+$accent-success-lighter: #79ece2;
+$accent-success-a10: rgba(38, 217, 202, 0.1);
+
+// Warning
+
+$accent-warning: #ffcf4c;
+$accent-warning-darker: #f5b400;
+$accent-warning-lighter: #ffe499;
+$accent-warning-a10: rgba(255, 207, 76, 0.1);
+
+// Danger
+
+$accent-danger: #dc1818;
+$accent-danger-darker: #c20a0a;
+$accent-danger-lighter: #ec5050;
+$accent-danger-a10: rgba(220, 24, 24, 0.1);
+
+// Actions
+
+$primary-action: $accent-brand;
+$secondary-action: $base-50;
+
+// Body
+
+$body-bg: $base-10;
+$body-color: $base-100;
+
+// Fill
+
+$fill-check: $accent-brand;
+$fill-check-border-color: $accent-brand;
+
+// Form hover & focus
+
+$form-border-hover: $accent-brand-lighter;
+$form-border-focus: $accent-brand;
+
+$form-bg: $base-0;
+$form-bg-focus: $base-inverted;
+
+// Tooltip
+
+$tooltip-bg: $base;
+$tooltip-color: $base-inverted;

@@ -24,7 +24,7 @@ gulp.task('style_min', function(){
 });
 
 gulp.task('style_release', function(){
-  return gulp.src('src/scss/**/*.scss')
+  return gulp.src('src/scss/export.scss')
   .pipe(sass())
   .pipe(concat('z.css'))
   .pipe(gulp.dest('dist/css'))

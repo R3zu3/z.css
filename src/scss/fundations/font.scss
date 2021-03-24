@@ -1,0 +1,135 @@
+/* /////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////// FONT STYLES //////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+// Text
+
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+mark,
+del,
+s,
+ins,
+u,
+small,
+strong,
+em,
+abbr {
+	display: inline;
+}
+
+mark {
+	background-color: yellow;
+	color: black;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+s {
+	text-decoration: line-through;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+u {
+	text-decoration: underline;
+}
+
+small {
+	font-size: smaller;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+abbr {
+	text-decoration: underline dotted;
+	cursor: help;
+}
+
+// Heading
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: var(--su-1);
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 0.83em;
+}
+
+h6 {
+	font-size: 0.67em;
+}
+
+// Responsive font size
+
+@include breakpoint-xs {
+	html {
+		font-size: 13px;
+	}
+}
+
+@include breakpoint-sm {
+	html {
+		font-size: 13.5px;
+	}
+}
+
+@include breakpoint-md {
+	html {
+		font-size: 14px;
+	}
+}
+
+@include breakpoint-lg {
+	html {
+		font-size: 14.5px;
+	}
+}
+
+@include breakpoint-xl {
+	html {
+		font-size: 15px;
+	}
+}
