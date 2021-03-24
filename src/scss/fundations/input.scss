@@ -30,6 +30,12 @@ input:focus {
 	box-shadow: 1px 1px 0 var(--form-border-focus);
 }
 
+// Input hidden
+
+input[hidden] {
+   display: none;
+}
+
 // Fix input sizes
 
 input[type='checkbox'],
