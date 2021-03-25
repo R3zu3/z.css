@@ -33,6 +33,10 @@
 
    .material-icons {
       font-size: 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
 
    // Icon Left
@@ -264,6 +268,8 @@
 	height: 30px;
 	transition: all var(--transition-props);
 	overflow: hidden;
+   display: inline-tablegu;
+   
 
    &:hover {
       border-color: var(--base);
@@ -276,6 +282,8 @@
       border-radius: 0;
       box-shadow: none;
       height: 28px;
+      display: table-cell;
+      line-height: 28px;
 
       &:hover {
          box-shadow: none;
@@ -289,6 +297,10 @@
       &:last-child {
          border-right-width: 0;
          border-radius: 0;
+      }
+
+      &.btn.btn-icon {
+         display: flex;
       }
    }
 }
@@ -607,6 +619,7 @@
 		font-size: var(--fs-s);
 		font-weight: normal;
 		height: 20px;
+      line-height: 19px;
 
 		&.btn-icon {
 			width: 22px;
@@ -647,6 +660,7 @@
 		font-size: var(--fs-m);
 		font-weight: normal;
 		height: 24px;
+      line-height: 24px;
 
 		&.btn-icon {
 			width: 26px;
@@ -686,6 +700,7 @@
 	.btn {
 		font-size: var(--fs-l);
 		height: 32px;
+      line-height: 31px;
 
 		&.btn-icon {
 			width: 34px;
@@ -725,9 +740,10 @@
 	.btn {
 		font-size: var(--fs-xl);
 		height: 36px;
+      line-height: 35px;
 
 		&.btn-icon {
-			width: 38px;
+			width: 30px;
 		}
 
 		&.btn-icon-left {
@@ -764,6 +780,7 @@
 	.btn {
 		font-size: var(--fs-2xl);
 		height: 40px;
+      line-height: 38px;
 
 		&.btn-icon {
 			width: 42px;
@@ -809,6 +826,7 @@
 		font-size: var(--fs-3xl);
 		height: 44px;
 		border-width: 0 2px;
+      line-height: 40px;
 
 		&.btn-icon {
 			width: 46px;
@@ -854,6 +872,7 @@
 		font-size: var(--fs-4xl);
 		height: 48px;
 		border-width: 0 2px;
+      line-height: 40px;
 
 		&.btn-icon {
 			width: 50px;
@@ -900,6 +919,7 @@
 		height: 52px;
 		padding: 0 var(--su-2);
 		border-width: 0 2px;
+      line-height: 44px;
 
 		&.btn-icon {
 			width: 54px;
