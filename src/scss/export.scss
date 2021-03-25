@@ -5,6 +5,7 @@
 // Fundations
 
 @import './fundations/reset.scss';
+@import './fundations/colors.scss';
 @import './fundations/fundations.scss';
 @import './fundations/grid.scss';
 @import './fundations/font.scss';
@@ -13,6 +14,7 @@
 // Components
 
 @import './components/tooltip.scss';
+@import './components/bottom.scss';
 @import './components/dropdown.scss';
 
 // Helpers

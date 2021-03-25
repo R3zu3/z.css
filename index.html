@@ -1,845 +1,1535 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-	<link rel="manifest" href="assets/manifest.json">
-	<meta name="msapplication-TileColor" content="#0000ff">
-	<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#0000ff">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="dist/css/z.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row grid-center">
-			<div class="col">
-				<div class="grid-example-block "><span>col</span></div>
-			</div>
-		</div>
-		<div class="row grid-center">
-			<div class="col">
-				<div class="grid-example-block "><span>col</span></div>
-			</div>
-			<div class="col">
-				<div class="grid-example-block "><span>col</span></div>
-			</div>
-		</div>
-		<div class="row grid-center">
-			<div class="col xs-12">
-				<div class="grid-example-block "><span>col xs-12</span></div>
-			</div>
-		</div>
-		<div class="row grid-center">
-			<div class="col xs-6">
-				<div class="grid-example-block "><span>col xs-6</span></div>
-			</div>
-			<div class="col xs-6">
-				<div class="grid-example-block "><span>col xs-6</span></div>
-			</div>
-		</div>
-		<div class="row grid-center">
-			<div class="col xs-4">
-				<div class="grid-example-block "><span>col xs-4</span></div>
-			</div>
-			<div class="col xs-4">
-				<div class="grid-example-block "><span>col xs-4</span></div>
-			</div>
-			<div class="col xs-4">
-				<div class="grid-example-block "><span>col xs-4</span></div>
-			</div>
-		</div>
-		<div class="row grid-center">
-			<div class="col xs-3">
-				<div class="grid-example-block "><span>col xs-3</span></div>
-			</div>
-			<div class="col xs-3">
-				<div class="grid-example-block "><span>col xs-3</span></div>
-			</div>
-			<div class="col xs-3">
-				<div class="grid-example-block "><span>col xs-3</span></div>
-			</div>
-			<div class="col xs-3">
-				<div class="grid-example-block "><span>col xs-3</span></div>
-			</div>
-		</div>
-		<div class="row grid-center">
-			<div class="col xs-6 sm-4 md-4 lg-4 xl-2">
-				<div class="grid-example-block ">
-					<span>
-						col
-						<mark class="col-highlight xs">xs-6</mark>
-						<br>
-						<mark class="col-highlight sm">sm-4</mark>
-						<mark class="col-highlight md">md-4</mark>
-						<br>
-						<mark class="col-highlight lg">lg-4</mark>
-						<mark class="col-highlight xl">xl-2</mark>
-					</span>
+	<head>
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="assets/manifest.json" />
+		<meta name="msapplication-TileColor" content="#0000ff" />
+		<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#0000ff" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="dist/css/z.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row grid-center">
+				<div class="col">
+					<div class="grid-example-block"><span>col</span></div>
 				</div>
 			</div>
-			<div class="col xs-6 sm-8 md-4 lg-2 xl-2">
-				<div class="grid-example-block ">
-					<span>
-						col 
-						<mark class="col-highlight xs">xs-6</mark>
-						<br>
-						<mark class="col-highlight sm">sm-8</mark>
-						<mark class="col-highlight md">md-4</mark>
-						<br>
-						<mark class="col-highlight lg">lg-2</mark>
-						<mark class="col-highlight xl">xl-2</mark>
-					</span>
+			<div class="row grid-center">
+				<div class="col">
+					<div class="grid-example-block"><span>col</span></div>
+				</div>
+				<div class="col">
+					<div class="grid-example-block"><span>col</span></div>
 				</div>
 			</div>
-			<div class="col xs-6 sm-8 md-4 lg-6 xl-2">
-				<div class="grid-example-block ">
-					<span>
-						col
-						<mark class="col-highlight xs">xs-6</mark>
-						<br>
-						<mark class="col-highlight sm">sm-8</mark>
-						<mark class="col-highlight md">md-4</mark>
-						<br>
-						<mark class="col-highlight lg">lg-6</mark>
-						<mark class="col-highlight xl">xl-2</mark>
-					</span>
+			<div class="row grid-center">
+				<div class="col xs-12">
+					<div class="grid-example-block"><span>col xs-12</span></div>
 				</div>
 			</div>
-			<div class="col xs-6 sm-4 md-4 lg-6 xl-2">
-				<div class="grid-example-block ">
-					<span>
-						col
-						<mark class="col-highlight xs">xs-6</mark>
-						<br>
-						<mark class="col-highlight sm">sm-4</mark>
-						<mark class="col-highlight md">md-4</mark>
-						<br>
-						<mark class="col-highlight lg">lg-6</mark>
-						<mark class="col-highlight xl">xl-2</mark>
-					</span>
+			<div class="row grid-center">
+				<div class="col xs-6">
+					<div class="grid-example-block"><span>col xs-6</span></div>
+				</div>
+				<div class="col xs-6">
+					<div class="grid-example-block"><span>col xs-6</span></div>
 				</div>
 			</div>
-			<div class="col xs-6 sm-4 md-4 lg-2 xl-2">
-				<div class="grid-example-block ">
-					<span>
-						col
-						<mark class="col-highlight xs">xs-6</mark>
-						<br>
-						<mark class="col-highlight sm">sm-4</mark>
-						<mark class="col-highlight md">md-4</mark>
-						<br>
-						<mark class="col-highlight lg">lg-2</mark>
-						<mark class="col-highlight xl">xl-2</mark>
-					</span>
+			<div class="row grid-center">
+				<div class="col xs-4">
+					<div class="grid-example-block"><span>col xs-4</span></div>
+				</div>
+				<div class="col xs-4">
+					<div class="grid-example-block"><span>col xs-4</span></div>
+				</div>
+				<div class="col xs-4">
+					<div class="grid-example-block"><span>col xs-4</span></div>
 				</div>
 			</div>
-			<div class="col xs-6 sm-8 md-4 lg-4 xl-2">
-				<div class="grid-example-block ">
-					<span>
-						col
-						<mark class="col-highlight xs">xs-6</mark>
-						<br>
-						<mark class="col-highlight sm">sm-8</mark>
-						<mark class="col-highlight md">md-4</mark>
-						<br>
-						<mark class="col-highlight lg">lg-4</mark>
-						<mark class="col-highlight xl">xl-2</mark>
-					</span>
+			<div class="row grid-center">
+				<div class="col xs-3">
+					<div class="grid-example-block"><span>col xs-3</span></div>
+				</div>
+				<div class="col xs-3">
+					<div class="grid-example-block"><span>col xs-3</span></div>
+				</div>
+				<div class="col xs-3">
+					<div class="grid-example-block"><span>col xs-3</span></div>
+				</div>
+				<div class="col xs-3">
+					<div class="grid-example-block"><span>col xs-3</span></div>
 				</div>
 			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col pt-0">
-				<form>
-					<div class="row">
-						<div class="col xs-6 lg-3">
-							<div class="tooltip-wrapper tooltip t-top" data-tooltip-text="Tooltip Top">
-								<input type="button" value="Hover Me">
-							</div>
-						</div>
-						<div class="col xs-6 lg-3">
-							<div class="tooltip-wrapper tooltip t-right" data-tooltip-text="Tooltip Right">
-								<input type="button"  value="Hover Me">
-							</div>
-						</div>
-						<div class="col xs-6 lg-3">
-							<div class="tooltip-wrapper tooltip t-bottom" data-tooltip-text="Tooltip Bottom">
-								<input type="button"  value="Hover Me">
-							</div>
-						</div>
-						<div class="col xs-6 lg-3">
-							<div class="tooltip-wrapper tooltip t-left" data-tooltip-text="Tooltip Left">
-								<input type="button"  value="Hover Me">
-							</div>
-						</div>
+			<div class="row grid-center">
+				<div class="col xs-6 sm-4 md-4 lg-4 xl-2">
+					<div class="grid-example-block">
+						<span>
+							col
+							<mark class="col-highlight xs">xs-6</mark>
+							<br />
+							<mark class="col-highlight sm">sm-4</mark>
+							<mark class="col-highlight md">md-4</mark>
+							<br />
+							<mark class="col-highlight lg">lg-4</mark>
+							<mark class="col-highlight xl">xl-2</mark>
+						</span>
 					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col pt-0">
-				<form>
-					<div class="row">
-						<div class="col xs-6 lg-3">
-							<div class="dropdown">
-								<label for="dropdown-1" class="btn btn-dropdown">One Dropdown</label>
-								<input class="dropdown-open" type="checkbox" id="dropdown-1" aria-hidden="true" hidden />
-								<label for="dropdown-1" class="dropdown-overlay"></label>
-								<div class="dropdown-inner">
-                           <div class="tooltip-wrapper tooltip t-top" data-tooltip-text="Tooltip Top">
-                              <input type="button" value="Hover Me">
-                           </div>
-								</div>
-							</div>
-						</div>
+				</div>
+				<div class="col xs-6 sm-8 md-4 lg-2 xl-2">
+					<div class="grid-example-block">
+						<span>
+							col
+							<mark class="col-highlight xs">xs-6</mark>
+							<br />
+							<mark class="col-highlight sm">sm-8</mark>
+							<mark class="col-highlight md">md-4</mark>
+							<br />
+							<mark class="col-highlight lg">lg-2</mark>
+							<mark class="col-highlight xl">xl-2</mark>
+						</span>
 					</div>
-				</form>
+				</div>
+				<div class="col xs-6 sm-8 md-4 lg-6 xl-2">
+					<div class="grid-example-block">
+						<span>
+							col
+							<mark class="col-highlight xs">xs-6</mark>
+							<br />
+							<mark class="col-highlight sm">sm-8</mark>
+							<mark class="col-highlight md">md-4</mark>
+							<br />
+							<mark class="col-highlight lg">lg-6</mark>
+							<mark class="col-highlight xl">xl-2</mark>
+						</span>
+					</div>
+				</div>
+				<div class="col xs-6 sm-4 md-4 lg-6 xl-2">
+					<div class="grid-example-block">
+						<span>
+							col
+							<mark class="col-highlight xs">xs-6</mark>
+							<br />
+							<mark class="col-highlight sm">sm-4</mark>
+							<mark class="col-highlight md">md-4</mark>
+							<br />
+							<mark class="col-highlight lg">lg-6</mark>
+							<mark class="col-highlight xl">xl-2</mark>
+						</span>
+					</div>
+				</div>
+				<div class="col xs-6 sm-4 md-4 lg-2 xl-2">
+					<div class="grid-example-block">
+						<span>
+							col
+							<mark class="col-highlight xs">xs-6</mark>
+							<br />
+							<mark class="col-highlight sm">sm-4</mark>
+							<mark class="col-highlight md">md-4</mark>
+							<br />
+							<mark class="col-highlight lg">lg-2</mark>
+							<mark class="col-highlight xl">xl-2</mark>
+						</span>
+					</div>
+				</div>
+				<div class="col xs-6 sm-8 md-4 lg-4 xl-2">
+					<div class="grid-example-block">
+						<span>
+							col
+							<mark class="col-highlight xs">xs-6</mark>
+							<br />
+							<mark class="col-highlight sm">sm-8</mark>
+							<mark class="col-highlight md">md-4</mark>
+							<br />
+							<mark class="col-highlight lg">lg-4</mark>
+							<mark class="col-highlight xl">xl-2</mark>
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col pt-0">
-				<table>
-					<thead>
-						<tr>
-							<th>
-								Heading
-							</th>
-							<th>
-								Example
-							</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;h1&gt;&lt;/h1&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0">
-									<h1>H1 SAMPLE TEXT</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<form>
+						<div class="row">
+							<div class="col xs-6 lg-3">
+								<div class="tooltip-wrapper tooltip t-top" data-tooltip-text="Tooltip Top">
+									<input type="button" value="Hover Me" />
 								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;h2&gt;&lt;/h2&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0">
-									<h2>H2 SAMPLE TEXT</h2>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;h3&gt;&lt;/h3&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0">
-									<h3>H3 SAMPLE TEXT</h3>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;h4&gt;&lt;/h4&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0">
-									<h4>H4 SAMPLE TEXT</h4>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;h5&gt;&lt;/h5&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0">
-									<h5>H5 SAMPLE TEXT</h5>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;h6&gt;&lt;/h6&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0">
-									<h6>H6 SAMPLE TEXT</h6>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<th>
-								Heading
-							</th>
-							<th>
-								Example
-							</th>
-						</tr>
-					</tfoot>
-				</table>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col pt-0">
-				<table>
-					<thead>
-						<tr>
-							<th>
-								Tag
-							</th>
-							<th>
-								Example
-							</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;mark&gt;&lt;/mark&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;del&gt;&lt;/del&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p><del>This line of text is meant to be treated as deleted text.</del></p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;s&gt;&lt;/s&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;ins&gt;&lt;/ins&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p><ins>This line of text is meant to be treated as no longer accurate.</ins></p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;u&gt;&lt;/u&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p><u>This line of text is meant to be treated as no longer accurate.</u></p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;small&gt;&lt;/small&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p><small>This line of text is meant to be treated as fine print.</small></p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;strong&gt;&lt;/strong&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p><strong>This line rendered as bold text.</strong></p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;em&gt;&lt;/em&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p><em>This line rendered as italicized text.</em></p>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="py-0">
-								<code>
-									&lt;abbr title="text"&gt;&lt;/abbr&gt;
-								</code>
-							</td>
-							<td class="py-0">
-								<div class="col xs-12 px-0 py-0">
-									<p>You can use the abbr tag to add a abbreviations <abbr title="Definition here">DFH</abbr> and show the definition on hover.</p>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<th>
-								Tag
-							</th>
-							<th>
-								Example
-							</th>
-						</tr>
-					</tfoot>
-				</table>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col pt-0">
-				<form>
-					<div class="row">
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>PRIMITIVE</h4>
-							<input type="radio">
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>LABEL</h4>
-							<div class="form-check">
-								<input type="radio" name="radio-label">
-								<label>Option A</label>
 							</div>
-							<div class="form-check">
-								<input type="radio" name="radio-label">
-								<label>Option B</label>
+							<div class="col xs-6 lg-3">
+								<div class="tooltip-wrapper tooltip t-right" data-tooltip-text="Tooltip Right">
+									<input type="button" value="Hover Me" />
+								</div>
 							</div>
-							<div class="form-check">
-								<input type="radio" name="radio-label">
-								<label>Option C</label>
+							<div class="col xs-6 lg-3">
+								<div class="tooltip-wrapper tooltip t-bottom" data-tooltip-text="Tooltip Bottom">
+									<input type="button" value="Hover Me" />
+								</div>
+							</div>
+							<div class="col xs-6 lg-3">
+								<div class="tooltip-wrapper tooltip t-left" data-tooltip-text="Tooltip Left">
+									<input type="button" value="Hover Me" />
+								</div>
 							</div>
 						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>GROUP</h4>
-							<div class="check-group">
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<form>
+						<div class="row">
+							<div class="col xs-6 lg-3">
+								<div class="dropdown">
+									<label for="dropdown-1" class="btn btn-dropdown">One Dropdown</label>
+									<input class="dropdown-open" type="checkbox" id="dropdown-1" aria-hidden="true" hidden />
+									<label for="dropdown-1" class="dropdown-overlay"></label>
+									<div class="dropdown-inner">
+										<div class="tooltip-wrapper tooltip t-top" data-tooltip-text="Tooltip Top">
+											<input type="button" value="Hover Me" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Buttom Type -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<table>
+						<thead>
+							<tr>
+								<th>Buttom Type Class</th>
+								<th>Buttom</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<code> .btn </code>
+								</td>
+								<td>
+									<a class="btn">
+										<span>Buttom</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-icon-left </code>
+								</td>
+								<td>
+									<a class="btn btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-icon-right </code>
+								</td>
+								<td>
+									<a class="btn btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-icon </code>
+								</td>
+								<td>
+									<a class="btn btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-icon.btn-icon-rounded </code>
+								</td>
+								<td>
+									<a class="btn btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn-group.btn-group </code>
+								</td>
+								<td>
+									<div class="btn-group btn-group">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Buttom Type Class</th>
+								<th>Buttom</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Buttom Colors -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<table>
+						<thead>
+							<tr>
+								<th>Buttom Color Class</th>
+								<th>Buttom</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<code> .btn </code>
+								</td>
+								<td>
+									<a class="btn">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-secondary </code>
+								</td>
+								<td>
+									<a class="btn btn-secondary">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-outlined </code>
+								</td>
+								<td>
+									<a class="btn btn-outlined">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-danger </code>
+								</td>
+								<td>
+									<a class="btn btn-danger">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-success </code>
+								</td>
+								<td>
+									<a class="btn btn-success">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-warning </code>
+								</td>
+								<td>
+									<a class="btn btn-warning">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-ghost </code>
+								</td>
+								<td>
+									<a class="btn btn-ghost">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-ghost-dimmed </code>
+								</td>
+								<td>
+									<a class="btn btn-ghost-dimmed">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-ghost-brand </code>
+								</td>
+								<td>
+									<a class="btn btn-ghost-brand">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-ghost-success </code>
+								</td>
+								<td>
+									<a class="btn btn-ghost-success">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-ghost-warning </code>
+								</td>
+								<td>
+									<a class="btn btn-ghost-warning">Buttom</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code> .btn.btn-ghost-danger </code>
+								</td>
+								<td>
+									<a class="btn btn-ghost-danger">Buttom</a>
+								</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th>Buttom Color Class</th>
+								<th>Buttom</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Buttom Sizes -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<table>
+						<thead>
+							<tr>
+								<th>Size class</th>
+								<th>Buttom Base</th>
+								<th>Icon Left</th>
+								<th>Icon Right</th>
+								<th>Icon Alone</th>
+								<th>Alone Round</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="py-0">
+									<code> .btn.btn-5xl </code>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-5xl"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-5xl btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-5xl btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-5xl btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-5xl btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn.btn-4xl </code>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-4xl"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-4xl btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-4xl btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-4xl btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-4xl btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn.btn-3xl </code>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-3xl"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-3xl btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-3xl btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-3xl btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-3xl btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn.btn-2xl </code>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-2xl"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-2xl btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-2xl btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-2xl btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-2xl btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn.btn-xl </code>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-xl"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-xl btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-xl btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-xl btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-xl btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn.btn-l </code>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-l"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-l btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-l btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-l btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-l btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn </code>
+								</td>
+								<td class="py-0">
+									<a class="btn"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn.btn-m </code>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-m"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-m btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-m btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-m btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-m btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn.btn-s </code>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-s"> Buttom </a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-s btn-icon-left">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td class="py-0">
+									<a class="btn btn-s btn-icon-right">
+										<span class="material-icons">face</span>
+										Buttom
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-s btn-icon">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+								<td>
+									<a class="btn btn-s btn-icon btn-icon-rounded">
+										<span class="material-icons">face</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Size class</th>
+								<th>Element Base</th>
+								<th>Icon Left</th>
+								<th>Icon Right</th>
+								<th>Icon Alone</th>
+								<th>Alone Round</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Buttom Group Sizes -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<table>
+						<thead>
+							<tr>
+								<th>Size class</th>
+								<th>Element</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group-5xl </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group-5xl">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group-4xl </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group-4xl">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group-3xl </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group-3xl">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group-2xl </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group-2xl">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group-xl </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group-xl">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group-l </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group-l">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group-m </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group-m">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> .btn-group.btn-group-s </code>
+								</td>
+								<td class="py-0">
+									<div class="btn-group btn-group-s">
+										<a class="btn btn-icon-right">
+											<span class="material-icons">done</span>
+											Buttom
+										</a>
+										<a class="btn btn btn-danger"> Buttom </a>
+										<a class="btn btn-warning btn-icon-left">
+											<span class="material-icons">delete</span>
+											Buttom
+										</a>
+										<a class="btn btn-secondary btn-icon">
+											<span class="material-icons">clear</span>
+										</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Size class</th>
+								<th>Element</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Heading Sizes -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<table>
+						<thead>
+							<tr>
+								<th>Heading</th>
+								<th>Example</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="py-0">
+									<code> &lt;h1&gt;&lt;/h1&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0">
+										<h1>H1 SAMPLE TEXT</h1>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;h2&gt;&lt;/h2&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0">
+										<h2>H2 SAMPLE TEXT</h2>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;h3&gt;&lt;/h3&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0">
+										<h3>H3 SAMPLE TEXT</h3>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;h4&gt;&lt;/h4&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0">
+										<h4>H4 SAMPLE TEXT</h4>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;h5&gt;&lt;/h5&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0">
+										<h5>H5 SAMPLE TEXT</h5>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;h6&gt;&lt;/h6&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0">
+										<h6>H6 SAMPLE TEXT</h6>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Heading</th>
+								<th>Example</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Text -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<table>
+						<thead>
+							<tr>
+								<th>Tag</th>
+								<th>Example</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="py-0">
+									<code> &lt;mark&gt;&lt;/mark&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;del&gt;&lt;/del&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p><del>This line of text is meant to be treated as deleted text.</del></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;s&gt;&lt;/s&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;ins&gt;&lt;/ins&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p><ins>This line of text is meant to be treated as no longer accurate.</ins></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;u&gt;&lt;/u&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p><u>This line of text is meant to be treated as no longer accurate.</u></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;small&gt;&lt;/small&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p><small>This line of text is meant to be treated as fine print.</small></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;strong&gt;&lt;/strong&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p><strong>This line rendered as bold text.</strong></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;em&gt;&lt;/em&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p><em>This line rendered as italicized text.</em></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="py-0">
+									<code> &lt;abbr title="text"&gt;&lt;/abbr&gt; </code>
+								</td>
+								<td class="py-0">
+									<div class="col xs-12 px-0 py-0">
+										<p>
+											You can use the abbr tag to add a abbreviations <abbr title="Definition here">DFH</abbr> and
+											show the definition on hover.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Tag</th>
+								<th>Example</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<form>
+						<div class="row">
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>PRIMITIVE</h4>
+								<input type="radio" />
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>LABEL</h4>
 								<div class="form-check">
-									<input type="radio" name="radio-group">
+									<input type="radio" name="radio-label" />
 									<label>Option A</label>
 								</div>
 								<div class="form-check">
-									<input type="radio" name="radio-group">
+									<input type="radio" name="radio-label" />
 									<label>Option B</label>
 								</div>
 								<div class="form-check">
-									<input type="radio" name="radio-group">
+									<input type="radio" name="radio-label" />
 									<label>Option C</label>
 								</div>
 							</div>
-						</div>
 
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>GROUP INLINE</h4>
-							<div class="check-group-inline">
-								<div class="form-check">
-									<input type="radio" name="radio-test">
-									<label>Option A</label>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>GROUP</h4>
+								<div class="check-group">
+									<div class="form-check">
+										<input type="radio" name="radio-group" />
+										<label>Option A</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-group" />
+										<label>Option B</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-group" />
+										<label>Option C</label>
+									</div>
 								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-test">
-									<label>Option B</label>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>GROUP INLINE</h4>
+								<div class="check-group-inline">
+									<div class="form-check">
+										<input type="radio" name="radio-test" />
+										<label>Option A</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-test" />
+										<label>Option B</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-test" />
+										<label>Option C</label>
+									</div>
 								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-test">
-									<label>Option C</label>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>GROUP LABEL</h4>
+								<div class="check-group">
+									<label>Input Label</label>
+									<div class="form-check">
+										<input type="radio" name="radio-group-label" />
+										<label>Option A</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-group-label" />
+										<label>Option B</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-group-label" />
+										<label>Option C</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>GROUP INLINE LABEL</h4>
+								<div class="check-group-inline m-auto">
+									<label>Input Label</label>
+									<div class="form-check">
+										<input type="radio" name="radio-group-inline-label" />
+										<label>Option A</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-group-inline-label" />
+										<label>Option B</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-group-inline-label" />
+										<label>Option C</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>LEGEND</h4>
+								<legend class="col xs-2 check-legend">Radios</legend>
+								<div class="col xs-10 check-group">
+									<div class="form-check">
+										<input type="radio" name="radio-legend" />
+										<label>Option A</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-legend" />
+										<label>Option B</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-legend" />
+										<label>Option C</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>LEGEND INLINE</h4>
+								<legend class="col xs-2 check-legend">Radios</legend>
+								<div class="col xs-10 check-group-inline">
+									<div class="form-check">
+										<input type="radio" name="radio-legend-inline" />
+										<label>Option A</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-legend-inline" />
+										<label>Option B</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="radio-legend-inline" />
+										<label>Option C</label>
+									</div>
 								</div>
 							</div>
 						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>GROUP LABEL</h4>
-							<div class="check-group">
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<form>
+						<div class="row">
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>PRIMITIVE</h4>
+								<input type="checkbox" />
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>LABEL</h4>
+								<div class="form-check">
+									<input type="checkbox" />
+									<label>Input Label</label>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>GROUP</h4>
+								<div class="check-group">
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>GROUP INLINE</h4>
+								<div class="check-group-inline">
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>GROUP LABEL</h4>
+								<div class="radio-group label-fix">
+									<label>Input Label</label>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>GROUP INLINE LABEL</h4>
+								<div class="radio-group-inline label-fix">
+									<label>Input Label</label>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>LEGEND</h4>
+								<legend class="col xs-2 check-legend">Radios</legend>
+								<div class="col xs-10 check-group">
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<h4>LEGEND INLINE</h4>
+								<legend class="col xs-2 check-legend">Radios</legend>
+								<div class="col xs-10 check-group-inline">
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" />
+										<label>Input Label</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<form>
+						<div class="row">
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="text" />
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
 								<label>Input Label</label>
-								<div class="form-check">
-									<input type="radio" name="radio-group-label">
-									<label>Option A</label>
-								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-group-label">
-									<label>Option B</label>
-								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-group-label">
-									<label>Option C</label>
+								<input type="text" />
+							</div>
+
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<div class="row">
+									<div class="col xs-4">
+										<label>Input Label</label>
+									</div>
+									<div class="col xs-8">
+										<input type="text" />
+									</div>
 								</div>
 							</div>
 						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>GROUP INLINE LABEL</h4>
-							<div class="check-group-inline m-auto">
-								<label>Input Label</label>
-								<div class="form-check">
-									<input type="radio" name="radio-group-inline-label">
-									<label>Option A</label>
-								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-group-inline-label">
-									<label>Option B</label>
-								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-group-inline-label">
-									<label>Option C</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>LEGEND</h4>
-							<legend class="col xs-2 check-legend">Radios</legend>
-							<div class="col xs-10 check-group">
-								<div class="form-check">
-									<input type="radio" name="radio-legend">
-									<label>Option A</label>
-								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-legend">
-									<label>Option B</label>
-								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-legend">
-									<label>Option C</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>LEGEND INLINE</h4>
-							<legend class="col xs-2 check-legend">Radios</legend>
-							<div class="col xs-10 check-group-inline">
-								<div class="form-check">
-									<input type="radio" name="radio-legend-inline">
-									<label>Option A</label>
-								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-legend-inline">
-									<label>Option B</label>
-								</div>
-								<div class="form-check">
-									<input type="radio" name="radio-legend-inline">
-									<label>Option C</label>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col pt-0">
-				<form>
-					<div class="row">
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>PRIMITIVE</h4>
-							<input type="checkbox">
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>LABEL</h4>
-							<div class="form-check">
-								<input type="checkbox">
-								<label>Input Label</label>
+		<div class="container">
+			<div class="row">
+				<div class="col pt-0">
+					<form>
+						<div class="row">
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="color" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="image" src="https://www.w3schools.com/images/colorpicker.gif" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="button" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="submit" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="reset" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="password" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="date" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="datetime-local" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="email" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="file" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="month" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="number" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="range" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="search" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="tel" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="time" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="url" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="week" />
+							</div>
+							<div class="col xs-12 sm-12 md-6 lg-3">
+								<input type="hidden" />
 							</div>
 						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>GROUP</h4>
-							<div class="check-group">
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>GROUP INLINE</h4>
-							<div class="check-group-inline">
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>GROUP LABEL</h4>
-							<div class="radio-group label-fix">
-								<label>Input Label</label>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>GROUP INLINE LABEL</h4>
-							<div class="radio-group-inline label-fix">
-								<label>Input Label</label>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>LEGEND</h4>
-							<legend class="col xs-2 check-legend">Radios</legend>
-							<div class="col xs-10 check-group">
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<h4>LEGEND INLINE</h4>
-							<legend class="col xs-2 check-legend">Radios</legend>
-							<div class="col xs-10 check-group-inline">
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-								<div class="form-check">
-									<input type="checkbox">
-									<label>Input Label</label>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col pt-0">
-				<form>
-					<div class="row">
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="text">
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<label>Input Label</label>
-							<input type="text">
-						</div>
-
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<div class="row">
-								<div class="col xs-4">
-									<label>Input Label</label>
-								</div>
-								<div class="col xs-8">
-									<input type="text">
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col pt-0">
-				<form>
-					<div class="row">
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="color">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="image" src="https://www.w3schools.com/images/colorpicker.gif">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="button">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="submit">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="reset">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="password">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="date">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="datetime-local">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="email">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="file">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="month">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="number">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="range">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="search">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="tel">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="time">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="url">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="week">
-						</div>
-						<div class="col xs-12 sm-12 md-6 lg-3">
-							<input type="hidden">
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
-</body>
+	</body>
 </html>

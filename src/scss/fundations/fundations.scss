@@ -5,59 +5,6 @@
 // Css vars
 
 :root {
-	/* COLORS */
-
-	--base: #{$base};
-	--base-inverted: #{$base-inverted};
-	--base-100: var(--base);
-	--base-a90: #{$base-a90};
-	--base-a80: #{$base-a80};
-	--base-a70: #{$base-a70};
-	--base-a60: #{$base-a60};
-	--base-a50: #{$base-a50};
-	--base-a40: #{$base-a40};
-	--base-a30: #{$base-a30};
-	--base-a20: #{$base-a20};
-	--base-a10: #{$base-a10};
-	--base-a5: #{$base-a5};
-	--base-90: #{$base-90};
-	--base-80: #{$base-80};
-	--base-70: #{$base-70};
-	--base-60: #{$base-60};
-	--base-50: #{$base-50};
-	--base-40: #{$base-40};
-	--base-30: #{$base-30};
-	--base-20: #{$base-20};
-	--base-10: #{$base-10};
-	--base-0: #{$base-0};
-	--accent-brand: #{$accent-brand};
-	--accent-brand-darker: #{$accent-brand-darker};
-	--accent-brand-lighter: #{$accent-brand-lighter};
-	--accent-brand-a10: #{$accent-brand-a10};
-	--accent-success: #{$accent-success-darker};
-	--accent-success-darker: #{$accent-success-darker};
-	--accent-success-lighter: #{$accent-success-lighter};
-	--accent-success-a10: #{$accent-success-a10};
-	--accent-warning: #{$accent-warning};
-	--accent-warning-darker: #{$accent-warning-darker};
-	--accent-warning-lighter: #{$accent-warning-lighter};
-	--accent-warning-a10: #{$accent-warning-a10};
-	--accent-danger: #{$accent-danger};
-	--accent-danger-darker: #{$accent-danger-darker};
-	--accent-danger-lighter: #{$accent-danger-lighter};
-	--accent-danger-a10: #{$accent-danger-a10};
-	--primary-action: var(--accent-brand);
-	--secondary-action: var(--base-50);
-	--body-bg: var(--base-10);
-	--body-color: var(--base-100);
-	--fill-check: var(--accent-brand);
-	--fill-check-border-color: var(--accent-brand);
-	--form-border-hover: var(--accent-brand-lighter);
-	--form-border-focus: var(--accent-brand);
-	--form-bg: var(--base-0);
-	--form-bg-focus: var(--base-inverted);
-	--tooltip-bg: var(--base);
-	--tooltip-color: var(--base-inverted);
 
 	/* MISC */
 
