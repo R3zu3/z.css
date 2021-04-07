@@ -12,9 +12,9 @@
 	position: relative;
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 2.222222222222222rem;
+	padding: 0 var(--su-4);
 	display: block;
-	margin-bottom: 0.555555555555556rem;
+	margin-bottom: var(--su-1);
 }
 
 @include breakpoint-xs {
@@ -197,6 +197,10 @@
 }
 
 @include breakpoint-xs-clamp {
+   .col.xs-0 {
+      display: none;
+   }
+
 	mark.col-highlight.xs {
 		padding: 0 var(--su-1);
 		border-style: solid;
@@ -283,6 +287,10 @@
 }
 
 @include breakpoint-sm-clamp {
+   .col.sm-0 {
+      display: none;
+   }
+
 	mark.col-highlight.sm {
 		padding: 0 var(--su-1);
 		border-style: solid;
@@ -369,6 +377,10 @@
 }
 
 @include breakpoint-md-clamp {
+   .col.md-0 {
+      display: none;
+   }
+
 	mark.col-highlight.md {
 		padding: 0 var(--su-1);
 		border-style: solid;
@@ -455,6 +467,10 @@
 }
 
 @include breakpoint-lg-clamp {
+   .col.lg-0 {
+      display: none;
+   }
+
 	mark.col-highlight.lg {
 		padding: 0 var(--su-1);
 		border-style: solid;
@@ -467,6 +483,10 @@
 // Col xl
 
 @include breakpoint-xl {
+   .col.xl-0 {
+      display: none;
+   }
+
 	.col.xl-1 {
 		-ms-flex-preferred-size: 8.3333333333%;
 		flex-basis: 8.3333333333%;

@@ -5,6 +5,7 @@
 // Primary
 
 .btn {
+
 	vertical-align: bottom;
 	height: 30px;
 	width: fit-content;
@@ -26,7 +27,7 @@
       color: var(--button-primary-color-hover);
       background-color: var(--button-primary-bg-hover);
       border-color: var(--base);
-      box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
+      box-shadow: var(--btn-shadow-hover), 2px 2px 0 var(--base);
    }
 
    // Icon
@@ -97,7 +98,6 @@
          color: var(--button-secondary-color-hover);
          background-color: var(--button-secondary-bg-hover);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -112,7 +112,6 @@
          color: var(--button-outlined-color-hover);
          background-color: var(--button-outlined-bg-hover);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -127,7 +126,6 @@
          color: var(--base-inverted);
          background-color: var(--accent-danger-darker);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -142,7 +140,6 @@
          color: var(--base-inverted);
          background-color: var(--accent-warning-darker);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -157,7 +154,6 @@
          color: var(--base-inverted);
          background-color: var(--accent-success-darker);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -167,13 +163,11 @@
       color: var(--button-ghost-color);
       background-color: var(--button-ghost-bg);
       border: var(--base-border-width) solid var(--button-ghost-bg);
-      box-shadow: none;
 
       &:hover {
          color: var(--button-ghost-color-hover);
          background-color: var(--button-ghost-bg-hover);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -183,13 +177,11 @@
       color: var(--button-ghost-dimmed-color);
       background-color: var(--button-ghost-bg);
       border: var(--base-border-width) solid var(--button-ghost-bg);
-      box-shadow: none;
 
       &:hover {
          color: var(--button-ghost-color-dimmed-hover);
          background-color: var(--button-ghost-bg-hover);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -199,13 +191,11 @@
       color: var(--accent-brand);
       background-color: var(--button-ghost-bg);
       border: var(--base-border-width) solid var(--button-ghost-bg);
-      box-shadow: none;
 
       &:hover {
          color: var(--accent-brand-darker);
          background-color: var(--button-ghost-bg-hover);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -215,13 +205,11 @@
       color: var(--accent-success);
       background-color: var(--button-ghost-bg);
       border: var(--base-border-width) solid var(--button-ghost-bg);
-      box-shadow: none;
 
       &:hover {
          color: var(--accent-success-darker);
          background-color: var(--button-ghost-bg-hover);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -231,13 +219,11 @@
       color: var(--accent-warning);
       background-color: var(--button-ghost-bg);
       border: var(--base-border-width) solid var(--button-ghost-bg);
-      box-shadow: none;
 
       &:hover {
          color: var(--accent-warning-darker);
          background-color: var(--button-ghost-bg-hover);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 
@@ -247,13 +233,11 @@
       color: var(--accent-danger);
       background-color: var(--button-ghost-bg);
       border: var(--base-border-width) solid var(--button-ghost-bg);
-      box-shadow: none;
 
       &:hover {
          color: var(--accent-danger-darker);
          background-color: var(--button-ghost-bg-hover);
          border-color: var(--base);
-         box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
       }
    }
 }
@@ -273,7 +257,7 @@
 
    &:hover {
       border-color: var(--base);
-      box-shadow: var(--btn-shadow-hover), 1px 1px 0 var(--base);
+      box-shadow: var(--btn-shadow-hover), 2px 2px 0 var(--base);
    }
 
    .btn {
@@ -303,650 +287,4 @@
          display: flex;
       }
    }
-}
-
-// Buttom Sizes
-
-.btn {
-	// Size small
-
-	&.btn-s {
-		font-size: var(--fs-s);
-		font-weight: normal;
-		height: 22px;
-
-      &.btn-icon{
-         width: 22px;
-      }
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-1) + 18px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-half);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-1) + 18px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-half);
-			}
-		}
-
-      .material-icons {
-         font-size: 18px;
-      }
-	}
-
-	// Size medium
-
-	&.btn-m {
-		font-size: var(--fs-m);
-		font-weight: normal;
-		height: 26px;
-
-      &.btn-icon{
-         width: 26px;
-      }
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-1) + 21px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-half);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-1) + 21px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-half);
-			}
-		}
-
-      .material-icons {
-         font-size: 21px;
-      }
-	}
-
-	// Size large
-
-	&.btn-l {
-		font-size: var(--fs-l);
-		height: 34px;
-
-      &.btn-icon{
-         width: 34px;
-      }
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 28px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 28px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-      .material-icons {
-         font-size: 28px;
-      }
-	}
-
-	// Size extra large
-
-	&.btn-xl {
-		font-size: var(--fs-xl);
-		height: 38px;
-
-      &.btn-icon{
-         width: 38px;
-      }
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 32px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 32px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-      .material-icons {
-         font-size: 32px;
-      }
-	}
-
-	// Size extra large 2
-
-	&.btn-2xl {
-		font-size: var(--fs-2xl);
-		height: 42px;
-
-      &.btn-icon{
-         width: 42px;
-      }
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 34px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 34px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-      .material-icons {
-         font-size: 34px;
-      }
-	}
-
-	// Size extra large 3
-
-	&.btn-3xl {
-		font-size: var(--fs-3xl);
-		height: 46px;
-		border-width: 2px;
-
-      &.btn-icon{
-         width: 46px;
-      }
-
-		&:hover {
-			box-shadow: var(--btn-shadow-hover), 2px 2px 0 var(--base);
-			border-width: 2px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 38px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 38px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-      .material-icons {
-         font-size: 38px;
-      }
-	}
-
-	// Size extra large 4
-
-	&.btn-4xl {
-		font-size: var(--fs-4xl);
-		height: 50px;
-		border-width: 2px;
-
-      &.btn-icon{
-         width: 50px;
-      }
-
-		&:hover {
-			box-shadow: var(--btn-shadow-hover), 2px 2px 0 var(--base);
-			border-width: 2px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 42px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 42px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-      .material-icons {
-         font-size: 42px;
-      }
-	}
-
-	// Size extra large 5
-
-	&.btn-5xl {
-		font-size: var(--fs-5xl);
-		height: 54px;
-		padding: 0 var(--su-2);
-		border-width: 2px;
-
-      &.btn-icon{
-         width: 54px;
-      }
-
-		&:hover {
-			box-shadow: var(--btn-shadow-hover), 3px 3px 0 var(--base);
-			border-width: 2px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 48px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 48px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-      .material-icons {
-         font-size: 48px;
-      }
-	}
-}
-
-// Group Small
-
-.btn-group-s {
-	height: 22px;
-
-	.btn {
-		font-size: var(--fs-s);
-		font-weight: normal;
-		height: 20px;
-      line-height: 19px;
-
-		&.btn-icon {
-			width: 22px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-1) + 18px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-half);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-1) + 18px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-half);
-			}
-		}
-
-		.material-icons {
-			font-size: 18px;
-		}
-	}
-}
-
-// Group Medium
-
-.btn-group-m {
-	height: 26px;
-
-	.btn {
-		font-size: var(--fs-m);
-		font-weight: normal;
-		height: 24px;
-      line-height: 24px;
-
-		&.btn-icon {
-			width: 26px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-1) + 21px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-half);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-1) + 21px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-half);
-			}
-		}
-
-		.material-icons {
-			font-size: 21px;
-		}
-	}
-}
-
-// Group Large
-
-.btn-group-l {
-	height: 34px;
-
-	.btn {
-		font-size: var(--fs-l);
-		height: 32px;
-      line-height: 31px;
-
-		&.btn-icon {
-			width: 34px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 28px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 28px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-		.material-icons {
-			font-size: 28px;
-		}
-	}
-}
-
-// Group Extra Large
-
-.btn-group-xl {
-	height: 38px;
-
-	.btn {
-		font-size: var(--fs-xl);
-		height: 36px;
-      line-height: 35px;
-
-		&.btn-icon {
-			width: 30px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 32px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 32px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-		.material-icons {
-			font-size: 32px;
-		}
-	}
-}
-
-// Group Extra Large 2
-
-.btn-group-2xl {
-	height: 42px;
-
-	.btn {
-		font-size: var(--fs-2xl);
-		height: 40px;
-      line-height: 38px;
-
-		&.btn-icon {
-			width: 42px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 34px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 34px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-		.material-icons {
-			font-size: 34px;
-		}
-	}
-}
-
-// Group Extra Large 3
-
-.btn-group-3xl {
-	height: 46px;
-	border-width: 2px;
-
-	&:hover {
-		box-shadow: var(--btn-shadow-hover), 2px 2px 0 var(--base);
-	}
-
-	.btn {
-		font-size: var(--fs-3xl);
-		height: 44px;
-		border-width: 0 2px;
-      line-height: 40px;
-
-		&.btn-icon {
-			width: 46px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 38px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 38px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-		.material-icons {
-			font-size: 38px;
-		}
-	}
-}
-
-// Group Extra Large 4
-
-.btn-group-4xl {
-	height: 50px;
-	border-width: 2px;
-
-	&:hover {
-		box-shadow: var(--btn-shadow-hover), 2px 2px 0 var(--base);
-	}
-
-	.btn {
-		font-size: var(--fs-4xl);
-		height: 48px;
-		border-width: 0 2px;
-      line-height: 40px;
-
-		&.btn-icon {
-			width: 50px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 42px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 42px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-		.material-icons {
-			font-size: 42px;
-		}
-	}
-}
-
-// Group Extra Large 5
-
-.btn-group-5xl {
-	height: 54px;
-	border-width: 2px;
-
-	&:hover {
-		box-shadow: var(--btn-shadow-hover), 3px 3px 0 var(--base);
-	}
-
-	.btn {
-		font-size: var(--fs-5xl);
-		height: 52px;
-		padding: 0 var(--su-2);
-		border-width: 0 2px;
-      line-height: 44px;
-
-		&.btn-icon {
-			width: 54px;
-		}
-
-		&.btn-icon-left {
-			padding-left: calc(var(--su-2) + 48px);
-
-			.material-icons {
-				position: absolute;
-				left: 0;
-				margin-left: var(--su-1);
-			}
-		}
-
-		&.btn-icon-right {
-			padding-right: calc(var(--su-2) + 48px);
-
-			.material-icons {
-				position: absolute;
-				right: 0;
-				margin-right: var(--su-1);
-			}
-		}
-
-		.material-icons {
-			font-size: 48px;
-		}
-	}
 }

@@ -75,6 +75,12 @@
 	--form-border-color: rgb(118, 118, 118);
 }
 
+// Head
+
+head {
+   display: none;
+}
+
 // Style, Script
 
 style,
@@ -194,9 +200,9 @@ form {
 	border-width: var(--base-border-width);
 	border-radius: var(--radius);
 	border-color: var(--base-border-color);
-	padding-bottom: 0.555555555555556rem;
-	padding-left: calc(0.555555555555556rem / 2);
-	padding-right: calc(0.555555555555556rem / 2);
+	padding-bottom: var(--su-1);
+	padding-left: var(--su-half);
+	padding-right: var(--su-half);
 }
 
 // Label

@@ -6,7 +6,7 @@
 
 input {
 	display: block;
-	padding: 0 0.555555555555556rem;
+	padding: 0 var(--su-1);
 	width: 100%;
 	border-style: solid;
 	border-width: var(--base-border-width);
@@ -21,13 +21,13 @@ input {
 
 input:hover {
 	border-color: var(--form-border-hover);
-	box-shadow: 1px 1px 0 var(--form-border-hover);
+	box-shadow: 2px 2px 0 var(--form-border-hover);
 }
 
 input:focus {
 	background-color: var(--form-bg-focus);
 	border-color: var(--form-border-focus);
-	box-shadow: 1px 1px 0 var(--form-border-focus);
+	box-shadow: 2px 2px 0 var(--form-border-focus);
 }
 
 // Input hidden
@@ -156,12 +156,12 @@ input[type='color']::-webkit-color-swatch {
 .form-check {
 	display: flex;
 	align-items: center;
-	margin-top: 0.555555555555556rem;
+	margin-top: var(--su-1);
 	transition: all var(--transition-props);
 }
 
 .form-check label {
-	padding: 0 0.555555555555556rem;
+	padding: 0 var(--su-1);
 }
 
 .check-legend {
@@ -179,13 +179,13 @@ input[type='color']::-webkit-color-swatch {
 .check-group-inline {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: -0.555555555555556rem;
+	margin-top: calc(-1 * var(--su-1));
 }
 
 .check-group-inline-label {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: calc(2 * 0.555555555555556rem);
+	margin-top: var(--su-2);
 }
 
 .check-group-inline > label {
@@ -193,14 +193,14 @@ input[type='color']::-webkit-color-swatch {
 }
 
 .check-group-inline .form-check {
-	margin-top: 0.555555555555556rem;
+	margin-top: var(--su-1);
 }
 
 .check-legend + .check-group {
 	float: right;
-	margin-top: -0.555555555555556rem;
+	margin-top: calc(-1 * var(--su-1));
 }
 
 .check-legend + .check-group-inline {
-	margin-top: calc(2 * -0.555555555555556rem);
+	margin-top: calc(-1 * var(--su-2));
 }
