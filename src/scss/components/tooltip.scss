@@ -4,6 +4,10 @@
 
 .tooltip-wrapper {
 	width: fit-content;
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .tooltip {
@@ -66,13 +70,11 @@
 }
 
 .tooltip.t-left::before {
-	top: 25%;
 	left: 0;
 	transform: translate(0, 0%) rotate(45deg);
 }
 
 .tooltip.t-left::after {
-	top: 0;
 	left: 0;
 }
 
@@ -85,13 +87,11 @@
 }
 
 .tooltip.t-right::before {
-	top: 25%;
 	right: 0;
 	transform: translate(0, 0%) rotate(45deg);
 }
 
 .tooltip.t-right::after {
-	top: 0;
 	right: 0;
 }
 

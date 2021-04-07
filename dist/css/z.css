@@ -1048,7 +1048,11 @@ input[type='color']::-webkit-color-swatch {
 /* ///////////////////////////// TOOLTIP STYLES ////////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////// */
 .tooltip-wrapper {
-  width: fit-content; }
+  width: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .tooltip {
   position: relative; }
@@ -1102,12 +1106,10 @@ input[type='color']::-webkit-color-swatch {
   transform: translate(-50%, calc(-100% - 10px)); }
 
 .tooltip.t-left::before {
-  top: 25%;
   left: 0;
   transform: translate(0, 0%) rotate(45deg); }
 
 .tooltip.t-left::after {
-  top: 0;
   left: 0; }
 
 .tooltip.t-left:hover::before {
@@ -1117,12 +1119,10 @@ input[type='color']::-webkit-color-swatch {
   transform: translate(calc(-100% - 10px)); }
 
 .tooltip.t-right::before {
-  top: 25%;
   right: 0;
   transform: translate(0, 0%) rotate(45deg); }
 
 .tooltip.t-right::after {
-  top: 0;
   right: 0; }
 
 .tooltip.t-right:hover::before {
