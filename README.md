@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="https://github.com/R3zu3/z.css/blob/main/cover_page_logo.png">
+  <img width="100%" src="https://github.com/R3zu3/z.css/blob/main/assets/img/cover_page_logo.png">
 </p>
 
 # Z.CSS
