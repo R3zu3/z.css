@@ -8,114 +8,71 @@
 
 	/* MISC */
 
-	--header-height: 56px;
-	--site-width: 1280px;
+	--average-height: 36px;
+	--base-border-width: 2px;
+	--radius: 3px;
+	--highlight-box-shadow: 3px 3px 0;
 
 	/* SPACING */
 
-	--su-half: #{$space_half};
-	--su-1: #{$space_1};
-	--su-2: #{$space_2};
-	--su-3: #{$space_3};
-	--su-4: #{$space_4};
-	--su-5: #{$space_5};
-	--su-6: #{$space_6};
-	--su-7: #{$space_7};
-	--su-8: #{$space_8};
-	--su-9: #{$space_9};
-	--su-10: #{$space_10};
+	--sp-half: #{$space_half};
+	--sp-1: #{$space_1};
+	--sp-2: #{$space_2};
+	--sp-3: #{$space_3};
+	--sp-4: #{$space_4};
+	--sp-5: #{$space_5};
+	--sp-6: #{$space_6};
+	--sp-7: #{$space_7};
+	--sp-8: #{$space_8};
+	--sp-9: #{$space_9};
+	--sp-10: #{$space_10};
+
+	/* FONTS */
+
+	--ff-sans-serif: 'Sen', sans-serif;
 
 	/* TRANSITION */
 
-	--transition-func: cubic-bezier(0.17, 0.67, 0.5, 0.71);
-	--transition-time: 100ms;
-	--transition-props: var(--transition-func) var(--transition-time);
+	--transition-props: 0.2s cubic-bezier(0.25, 0.4, 0.55, 1.4);
 
-	/* TYPOGRAPHY */
-
-	--ff-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-	--ff-monospace: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-	--ff-serif: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
-	--ff-comic: 'Comic Sans MS', cursive, sans-serif;
-	--ff-dyslexic: OpenDyslexic, sans-serif;
-	--fs-xs: 0.75rem;
-	--fs-s: 0.875rem;
-	--fs-base: 1rem;
-	--fs-l: 1.125rem;
-	--fs-xl: 1.25rem;
-	--fs-2xl: 1.5rem;
-	--fs-3xl: 1.875rem;
-	--fs-4xl: 2.25rem;
-	--fs-5xl: 3rem;
-	--fw-normal: 400;
-	--fw-medium: 500;
-	--fw-bold: 700;
-	--fw-heavy: 800;
-
-	/* LINE HEIGHT */
-
-	--lh-tight: 1.25;
-	--lh-base: 1.5;
-
-	/* Z INDEX */
-
-	--z-negative: -1;
-	--z-elevate: 1;
-	--z-sticky: 100;
-	--z-drawer: 200;
-	--z-modal: 300;
-	--z-dropdown: 400;
-	--z-popover: 500;
-
-	/* BORDER */
-
-	--radius: 5px;
-	--base-border-width: 1px;
-	--form-border-color: rgb(118, 118, 118);
 }
 
-// Head
+// Head, Style, Script
 
-head {
-   display: none;
-}
-
-// Sticky Footer
-
-body {
-   display: flex;
-   min-height: 100vh;
-   flex-direction: column;
-}
-
-main {
-   flex: 1 0 auto;
-}
-
-// Style, Script
-
+head,
 style,
 script {
 	display: none;
 }
 
+// Sticky Footer
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+    overflow-x: hidden;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
 // Html
 
 html {
-	line-height: var(--lh-base);
+	line-height: initial;
 	font-size: 18px;
 	color: #101010;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: geometricPrecision;
+    overflow-x: hidden;
 }
 
 // Body
 
 body {
 	font-family: var(--ff-sans-serif);
-	background: var(--body-bg);
-	color: var(--body-color);
 }
 
 // Table
@@ -126,12 +83,7 @@ table {
 	box-sizing: border-box;
 	text-indent: initial;
 	border-spacing: 0px;
-	border-color: var(--form-border-color);
-	border-width: var(--base-border-width);
-	border-style: solid;
-	border-radius: var(--radius);
 	width: 100%;
-	background-color: var(--base-inverted);
 	transition: all var(--transition-props);
 	overflow: hidden;
 }
@@ -176,7 +128,6 @@ tfoot th {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	border-bottom: 1px solid #e4e7ed;
 }
 
 tbody tr:hover {
@@ -187,7 +138,6 @@ td {
 	display: table-cell;
 	vertical-align: inherit;
 	padding: 14px;
-	border-bottom: 1px solid #ebeef5;
 }
 
 // Pre
@@ -208,13 +158,9 @@ code {
 // Form
 
 form {
-	border-style: solid;
-	border-width: var(--base-border-width);
-	border-radius: var(--radius);
-	border-color: var(--base-border-color);
-	padding-bottom: var(--su-1);
-	padding-left: var(--su-half);
-	padding-right: var(--su-half);
+	padding: var(--sp-1);
+    border: solid 2px;
+    border-radius: var(--radius);
 }
 
 // Label

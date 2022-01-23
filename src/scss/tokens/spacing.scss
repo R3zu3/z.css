@@ -4,14 +4,14 @@
 
 // Units
 
-$space_half: 0.555555555555556rem / 2;
 $space_1: 0.555555555555556rem;
-$space_2: 0.555555555555556rem * 2;
-$space_3: 0.555555555555556rem * 3;
-$space_4: 0.555555555555556rem * 4;
-$space_5: 0.555555555555556rem * 5;
-$space_6: 0.555555555555556rem * 6;
-$space_7: 0.555555555555556rem * 7;
-$space_8: 0.555555555555556rem * 8;
-$space_9: 0.555555555555556rem * 9;
-$space_10: 0.555555555555556rem * 10;
+$space_2: $space_1 * 2;
+$space_3: $space_1 * 3;
+$space_4: $space_1 * 4;
+$space_5: $space_1 * 5;
+$space_6: $space_1 * 6;
+$space_7: $space_1 * 7;
+$space_8: $space_1 * 8;
+$space_9: $space_1 * 9;
+$space_10: $space_1 * 10;
+$space_half: calc($space_1 / 2);

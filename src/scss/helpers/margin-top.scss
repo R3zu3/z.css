@@ -14,6 +14,46 @@
 	margin-top: 0;
 }
 
+.mt-1 {
+	margin-top: var(--su-1);
+}
+
+.mt-2 {
+	margin-top: var(--su-2);
+}
+
+.mt-3 {
+	margin-top: var(--su-3);
+}
+
+.mt-4 {
+	margin-top: var(--su-4);
+}
+
+.mt-5 {
+	margin-top: var(--su-5);
+}
+
+.mt-6 {
+	margin-top: var(--su-6);
+}
+
+.mt-7 {
+	margin-top: var(--su-7);
+}
+
+.mt-8 {
+	margin-top: var(--su-8);
+}
+
+.mt-9 {
+	margin-top: var(--su-9);
+}
+
+.mt-10 {
+	margin-top: var(--su-10);
+}
+
 .-mt-1 {
 	margin-top: calc(var(--su-1) * -1);
 }

@@ -14,6 +14,46 @@
 	margin-left: 0;
 }
 
+.ml-1 {
+	margin-left: var(--su-1);
+}
+
+.ml-2 {
+	margin-left: var(--su-2);
+}
+
+.ml-3 {
+	margin-left: var(--su-3);
+}
+
+.ml-4 {
+	margin-left: var(--su-4);
+}
+
+.ml-5 {
+	margin-left: var(--su-5);
+}
+
+.ml-6 {
+	margin-left: var(--su-6);
+}
+
+.ml-7 {
+	margin-left: var(--su-7);
+}
+
+.ml-8 {
+	margin-left: var(--su-8);
+}
+
+.ml-9 {
+	margin-left: var(--su-9);
+}
+
+.ml-10 {
+	margin-left: var(--su-10);
+}
+
 .-ml-1 {
 	margin-left: calc(var(--su-1) * -1);
 }

@@ -1,0 +1,56 @@
+/* /////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////// DOCUMENTATION PAGE STYLES ///////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+:root {
+  /* MISC */
+  --header-height: 56px;
+  --side-nav-width: 311px; }
+
+.sidenav {
+  position: fixed;
+  width: var(--side-nav-width);
+  height: 100%;
+  border-right: 1px solid gray;
+  left: 0;
+  transition: left .3s; }
+  .sidenav ~ header,
+  .sidenav ~ main,
+  .sidenav ~ footer {
+    position: relative;
+    width: 100vw;
+    left: calc(var(--side-nav-width));
+    transition: left .3s, width .1s; }
+  .sidenav ~ header {
+    border-bottom: 1px solid gray; }
+  .sidenav ~ footer {
+    border-top: 1px solid gray; }
+
+.sidenav.hide {
+  left: calc(var(--side-nav-width) * -1); }
+  .sidenav.hide ~ header,
+  .sidenav.hide ~ main,
+  .sidenav.hide ~ footer {
+    left: 0; }
+
+.stripes-bg {
+  background: repeating-linear-gradient(45deg, #000000, #000000 30px, #52057b 30px, #52057b 60px, #892cdc 60px, #892cdc 90px, #bc6ff1 90px, #bc6ff1 120px, #a0b5d4 120px, #a0b5d4 150px);
+  background-size: 212px 212px;
+  animation: barberpole 2s linear infinite;
+  box-shadow: 10px 10px, 5px -5px, -5px 5px, -10px -10px; }
+
+@keyframes barberpole {
+  100% {
+    background-position: 0% 212px; } }
+
+.start-btn {
+  width: 335px; }
+
+@media (min-width: 1024px) {
+  .sidenav {
+    left: 0 !important;
+    position: fixed; }
+    .sidenav ~ header,
+    .sidenav ~ main,
+    .sidenav ~ footer {
+      width: calc(100% - var(--side-nav-width));
+      left: var(--side-nav-width) !important; } }

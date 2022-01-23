@@ -12,20 +12,19 @@
 	position: relative;
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 var(--su-4);
+	padding: var(--sp-half);
 	display: block;
-	margin-bottom: var(--su-1);
 }
 
 @include breakpoint-xs {
 	.container {
-		padding: 0 var(--su-1);
+		padding: var(--sp-half);
 	}
 }
 
 .container-fluid {
 	width: 100%;
-	padding: 0;
+	padding: var(--sp-half);
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
@@ -197,15 +196,15 @@
 }
 
 @include breakpoint-xs-clamp {
-   .col.xs-0 {
-      display: none;
-   }
+	.col.xs-0 {
+		display: none;
+	}
 
 	mark.col-highlight.xs {
-		padding: 0 var(--su-1);
+		padding: 0 var(--sp-1);
 		border-style: solid;
-		border-width: var(--base-border-width);
-		border-radius: var(--radius);
+		border-width: 1px;
+		border-radius: 3px;
 		background-color: var(--base-10);
 	}
 }
@@ -287,15 +286,15 @@
 }
 
 @include breakpoint-sm-clamp {
-   .col.sm-0 {
-      display: none;
-   }
+	.col.sm-0 {
+		display: none;
+	}
 
 	mark.col-highlight.sm {
-		padding: 0 var(--su-1);
+		padding: 0 var(--sp-1);
 		border-style: solid;
-		border-width: var(--base-border-width);
-		border-radius: var(--radius);
+		border-width: 1px;
+		border-radius: 3px;
 		background-color: var(--base-10);
 	}
 }
@@ -377,15 +376,15 @@
 }
 
 @include breakpoint-md-clamp {
-   .col.md-0 {
-      display: none;
-   }
+	.col.md-0 {
+		display: none;
+	}
 
 	mark.col-highlight.md {
-		padding: 0 var(--su-1);
+		padding: 0 var(--sp-1);
 		border-style: solid;
-		border-width: var(--base-border-width);
-		border-radius: var(--radius);
+		border-width: 1px;
+		border-radius: 3px;
 		background-color: var(--base-10);
 	}
 }
@@ -467,15 +466,15 @@
 }
 
 @include breakpoint-lg-clamp {
-   .col.lg-0 {
-      display: none;
-   }
+	.col.lg-0 {
+		display: none;
+	}
 
 	mark.col-highlight.lg {
-		padding: 0 var(--su-1);
+		padding: 0 var(--sp-1);
 		border-style: solid;
-		border-width: var(--base-border-width);
-		border-radius: var(--radius);
+		border-width: 1px;
+		border-radius: 3px;
 		background-color: var(--base-10);
 	}
 }
@@ -483,9 +482,9 @@
 // Col xl
 
 @include breakpoint-xl {
-   .col.xl-0 {
-      display: none;
-   }
+	.col.xl-0 {
+		display: none;
+	}
 
 	.col.xl-1 {
 		-ms-flex-preferred-size: 8.3333333333%;
@@ -560,10 +559,10 @@
 	}
 
 	mark.col-highlight.xl {
-		padding: 0 var(--su-1);
+		padding: 0 var(--sp-1);
 		border-style: solid;
-		border-width: var(--base-border-width);
-		border-radius: var(--radius);
+		border-width: 1px;
+		border-radius: 3px;
 		background-color: var(--base-10);
 	}
 }
@@ -578,17 +577,18 @@
 	flex-grow: 1;
 	position: relative;
 	width: 100%;
-	padding-right: var(--su-half);
-	padding-left: var(--su-half);
-	padding-top: var(--su-1);
+	padding-right: var(--sp-half);
+	padding-left: var(--sp-half);
+	padding-top: var(--sp-half);
+	padding-bottom: var(--sp-half);
 }
 
 // Grid example
 
 .grid-example-block {
 	background: #00000057;
-	border-radius: var(--radius);
-	padding: var(--su-1);
+	border-radius: 3px;
+	padding: var(--sp-1);
 }
 
 mark.col-highlight {

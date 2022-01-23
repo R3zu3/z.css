@@ -2,19 +2,19 @@
 // ////////////////////////////// BREAKPOINTS //////////////////////////////// //
 // /////////////////////////////////////////////////////////////////////////// //
 
-$screen-xs-min: 320px;
-$screen-xs-max: 575px;
+$screen-xs-min: 0px;
+$screen-xs-max: 319px;
 
-$screen-sm-min: 576px;
+$screen-sm-min: 320px;
 $screen-sm-max: 767px;
 
 $screen-md-min: 768px;
-$screen-md-max: 991px;
+$screen-md-max: 1023px;
 
-$screen-lg-min: 992px;
-$screen-lg-max: 1279px;
+$screen-lg-min: 1024px;
+$screen-lg-max: 1439px;
 
-$screen-xl-min: 1280px;
+$screen-xl-min: 1440px;
 
 // Extra small devices
 

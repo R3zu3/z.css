@@ -14,6 +14,46 @@
 	margin: 0;
 }
 
+.m-1 {
+	margin: var(--su-1);
+}
+
+.m-2 {
+	margin: var(--su-2);
+}
+
+.m-3 {
+	margin: var(--su-3);
+}
+
+.m-4 {
+	margin: var(--su-4);
+}
+
+.m-5 {
+	margin: var(--su-5);
+}
+
+.m-6 {
+	margin: var(--su-6);
+}
+
+.m-7 {
+	margin: var(--su-7);
+}
+
+.m-8 {
+	margin: var(--su-8);
+}
+
+.m-9 {
+	margin: var(--su-9);
+}
+
+.m-10 {
+	margin: var(--su-10);
+}
+
 .-m-1 {
 	margin: calc(var(--su-1) * -1);
 }
