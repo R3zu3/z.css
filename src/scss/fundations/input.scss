@@ -5,13 +5,13 @@
 // Input
 
 :root {
-	--form-border-color: #000000;
-	--form-border-color-focus: #0000FF;
-	--form-border-color-error: #FF0033;
-	--form-border-color-disabled: #FF0033;
-	--form-background-color: #C4C4C4;
-	--form-background-color-focus: #FAFAFA;
-	--form-background-color-error: #FFBEBE;
+	--form-border-color: var(--color-palette-0);
+	--form-border-color-focus: var(--color-palette-1);
+	--form-border-color-error: var(--color-palette-5);
+	--form-border-color-disabled: var(--color-palette-5);
+	--form-background-color: var(--color-palette-7);
+	--form-background-color-focus: var(--color-palette-4);
+	--form-background-color-error: var(--color-palette-8);
 	--form-input-min-width: 30px;
 	--form-input-max-width: 100%;
 	--form-input-font-size: 16px;

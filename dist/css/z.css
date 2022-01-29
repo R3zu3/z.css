@@ -11,6 +11,15 @@
 
 :root {
   /* COLORS */
+  --color-palette-0:#111111;
+  --color-palette-1:#0000ff;
+  --color-palette-2:#fe01fe;
+  --color-palette-3:#F995C6;
+  --color-palette-4:#FAFAFA;
+  --color-palette-5:#FF0033;
+  --color-palette-6:#FF7590;
+  --color-palette-7:#C4C4C4;
+  --color-palette-8:#FFBEBE;
 }
 
 /* /////////////////////////////////////////////////////////////////////////// */
@@ -882,13 +891,13 @@ h6 {
 /* ////////////////////////////// INPUT STYLES /////////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////// */
 :root {
-  --form-border-color: #000000;
-  --form-border-color-focus: #0000FF;
-  --form-border-color-error: #FF0033;
-  --form-border-color-disabled: #FF0033;
-  --form-background-color: #C4C4C4;
-  --form-background-color-focus: #FAFAFA;
-  --form-background-color-error: #FFBEBE;
+  --form-border-color: var(--color-palette-0);
+  --form-border-color-focus: var(--color-palette-1);
+  --form-border-color-error: var(--color-palette-5);
+  --form-border-color-disabled: var(--color-palette-5);
+  --form-background-color: var(--color-palette-7);
+  --form-background-color-focus: var(--color-palette-4);
+  --form-background-color-error: var(--color-palette-8);
   --form-input-min-width: 30px;
   --form-input-max-width: 100%;
   --form-input-font-size: 16px;
@@ -1185,49 +1194,85 @@ select * {
 /* /////////////////////////// COLLECTION STYLES ///////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////// */
 :root {
-  /*--form-border-color: #000000;
-  --form-border-color-focus: #0000FF;
-  --form-border-color-error: #FF0033;
-  --form-border-color-disabled: #FF0033;
-  --form-background-color: #C4C4C4;
-  --form-background-color-focus: #FAFAFA;
-  --form-background-color-error: #FFBEBE;
-  --form-input-min-width: 30px;
-  --form-input-max-width: 100%;
-  --form-input-font-size: 16px;*/
+  --collection-elem-bg-color: var(--color-palette-3);
+  --collection-c-elem-bg-color: var(--color-palette-2);
 }
 
+.collection {
+  box-shadow: 0px 0px 0 var(--form-border-color);
+  background-color: var(--collection-background-color);
+  border-width: var(--base-border-width);
+  border-color: var(--form-border-color);
+  transition: all var(--transition-props);
+}
+.collection:first-child {
+  border-style: solid;
+  /* box-shadow: none !important; */
+  overflow: hidden;
+}
+.collection:first-child:hover {
+  box-shadow: var(--highlight-box-shadow) var(--form-border-color);
+}
 .collection li, .collection a {
   height: var(--average-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   transition: all var(--transition-props);
+  border-bottom: solid;
+  border-width: var(--base-border-width);
+  border-color: var(--form-border-color);
+  box-sizing: content-box;
+  background: var(--collection-elem-bg-color);
+  color: var(--color-palette-0);
+  text-indent: calc(var(--sp-1) * var(--nested-depth, 1));
+}
+.collection li:last-child, .collection a:last-child {
+  border-bottom: none;
+}
+.collection li:hover, .collection a:hover {
+  box-shadow: var(--highlight-box-shadow) var(--form-border-color);
+}
+.collection.center-align li, .collection.center-align a {
+  text-indent: 0;
+  align-items: center;
+}
+.collection.right-align li, .collection.right-align a {
+  direction: rtl;
+  text-indent: calc(var(--sp-1) * var(--nested-depth, 1));
+}
+.collection.left-align li, .collection.left-align a {
+  direction: ltr;
+  text-indent: calc(var(--sp-1) * var(--nested-depth, 1));
 }
 .collection li.collapsible {
+  border: none;
   cursor: pointer;
   height: auto;
-  /*a.child-open + ul {
-      height: auto;
-  }*/
 }
 .collection li.collapsible a, .collection li.collapsible ul {
   width: 100%;
 }
 .collection li.collapsible a + ul {
-  background-color: red;
   height: 0px;
   overflow: hidden;
-  transition: all var(--transition-props);
+  transition: all var(--transition-props), border-top 0s;
+}
+.collection li.collapsible a {
+  background: var(--collection-c-elem-bg-color);
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.collection li.collapsible a:hover {
+  box-shadow: var(--highlight-box-shadow) var(--form-border-color);
+  background-color: var(--form-border-color-focus);
+  color: white;
 }
 .collection li.collapsible a.active + ul {
-  background-color: red;
   overflow: hidden;
-  height: calc(var(--average-height) * var(--childrens));
-}
-.collection a {
-  background-color: blue;
+  height: calc(var(--average-height) * var(--childrens) + var(--childrens) * var(--base-border-width) - var(--base-border-width));
 }
 
 /* /////////////////////////////////////////////////////////////////////////// */
