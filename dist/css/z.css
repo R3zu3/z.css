@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* /////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////// RESET STYLES /////////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////// */
@@ -1183,321 +1182,52 @@ select * {
 }
 
 /* /////////////////////////////////////////////////////////////////////////// */
-/* ////////////////////////////// BOTTOM STYLES ////////////////////////////// */
+/* /////////////////////////// COLLECTION STYLES ///////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////// */
-.btn {
-  display: inline-flex;
-  position: relative;
-  height: var(--average-height);
-  width: fit-content;
-  padding: 0 var(--su-1);
-  vertical-align: bottom;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: var(--border-radius-xs);
-  border: var(--border-width-xs) solid var(--button-primary-bg);
-  background-color: var(--button-primary-bg);
-  color: var(--base-0);
-  transition: all var(--transition-props);
-  box-shadow: var(--btn-shadow), 0px 0px 0 var(--form-border-focus);
-  font-weight: var(--fw-medium);
-}
-.btn:hover {
-  color: var(--button-primary-color-hover);
-  background-color: var(--button-primary-bg-hover);
-  border-color: var(--base);
-  box-shadow: var(--hover-box-shadow-xs);
-}
-.btn .material-icons {
-  font-size: inherit;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn.icon-left {
-  flex-direction: row;
-}
-.btn.icon-left .material-icons {
-  padding-right: var(--icon-padding);
-}
-.btn.icon-right {
-  flex-direction: row-reverse;
-}
-.btn.icon-right .material-icons {
-  padding-left: var(--icon-padding);
-}
-.btn.icon {
-  width: 30px;
-  padding: 0;
-}
-.btn.icon:before {
-  content: "  ";
-}
-.btn.icon.btn-icon-rounded {
-  border-radius: 1000px;
-}
-.btn.icon .material-icons {
-  position: absolute;
-  right: unset;
-  margin-right: unset;
-}
-.btn.secondary {
-  color: var(--button-secondary-color);
-  background-color: var(--button-secondary-bg);
-  border: var(--base-border-width) solid var(--button-secondary-bg);
-}
-.btn.secondary:hover {
-  color: var(--button-secondary-color-hover);
-  background-color: var(--button-secondary-bg-hover);
-  border-color: var(--base);
-}
-.btn.outlined {
-  color: var(--button-outlined-color);
-  background-color: var(--button-outlined-bg);
-  border: var(--base-border-width) solid var(--button-outlined-border);
-}
-.btn.outlined:hover {
-  color: var(--button-outlined-color-hover);
-  background-color: var(--button-outlined-bg-hover);
-  border-color: var(--base);
-}
-.btn.danger {
-  color: var(--base-inverted);
-  background-color: var(--accent-danger);
-  border: var(--base-border-width) solid var(--accent-danger);
-}
-.btn.danger:hover {
-  color: var(--base-inverted);
-  background-color: var(--accent-danger-darker);
-  border-color: var(--base);
-}
-.btn.warning {
-  color: var(--base);
-  background-color: var(--accent-warning);
-  border: var(--base-border-width) solid var(--accent-warning);
-}
-.btn.warning:hover {
-  color: var(--base-inverted);
-  background-color: var(--accent-warning-darker);
-  border-color: var(--base);
-}
-.btn.success {
-  color: var(--button-secondary-color);
-  background-color: var(--accent-success);
-  border: var(--base-border-width) solid var(--accent-success);
-}
-.btn.success:hover {
-  color: var(--base-inverted);
-  background-color: var(--accent-success-darker);
-  border-color: var(--base);
-}
-.btn.ghost {
-  color: var(--button-ghost-color);
-  background-color: var(--button-ghost-bg);
-  border: var(--base-border-width) solid var(--button-ghost-bg);
-}
-.btn.ghost:hover {
-  color: var(--button-ghost-color-hover);
-  background-color: var(--button-ghost-bg-hover);
-  border-color: var(--base);
-}
-.btn.ghost-dimmed {
-  color: var(--button-ghost-dimmed-color);
-  background-color: var(--button-ghost-bg);
-  border: var(--base-border-width) solid var(--button-ghost-bg);
-}
-.btn.ghost-dimmed:hover {
-  color: var(--button-ghost-color-dimmed-hover);
-  background-color: var(--button-ghost-bg-hover);
-  border-color: var(--base);
-}
-.btn.ghost-brand {
-  color: var(--accent-brand);
-  background-color: var(--button-ghost-bg);
-  border: var(--base-border-width) solid var(--button-ghost-bg);
-}
-.btn.ghost-brand:hover {
-  color: var(--accent-brand-darker);
-  background-color: var(--button-ghost-bg-hover);
-  border-color: var(--base);
-}
-.btn.ghost-success {
-  color: var(--accent-success);
-  background-color: var(--button-ghost-bg);
-  border: var(--base-border-width) solid var(--button-ghost-bg);
-}
-.btn.ghost-success:hover {
-  color: var(--accent-success-darker);
-  background-color: var(--button-ghost-bg-hover);
-  border-color: var(--base);
-}
-.btn.ghost-warning {
-  color: var(--accent-warning);
-  background-color: var(--button-ghost-bg);
-  border: var(--base-border-width) solid var(--button-ghost-bg);
-}
-.btn.ghost-warning:hover {
-  color: var(--accent-warning-darker);
-  background-color: var(--button-ghost-bg-hover);
-  border-color: var(--base);
-}
-.btn.ghost-danger {
-  color: var(--accent-danger);
-  background-color: var(--button-ghost-bg);
-  border: var(--base-border-width) solid var(--button-ghost-bg);
-}
-.btn.ghost-danger:hover {
-  color: var(--accent-danger-darker);
-  background-color: var(--button-ghost-bg-hover);
-  border-color: var(--base);
-}
-.btn.size-xs {
-  height: calc(var(--average-height) * 1);
-  padding: 0 calc(var(--su-1) * 1);
-  font-size: var(--fs-xs);
-  line-height: var(--lh-xs);
-  border-width: var(--border-width-xs);
-  border-radius: var(--border-radius-xs);
-  --icon-padding: calc(var(--su-1) * 1.00);
-}
-.btn.size-xs:hover {
-  box-shadow: var(--hover-box-shadow-xs);
-}
-.btn.size-sm {
-  height: calc(var(--average-height) * 1.25);
-  padding: 0 calc(var(--su-1) * 1.25);
-  font-size: var(--fs-sm);
-  line-height: var(--lh-sm);
-  border-width: var(--border-width-sm);
-  border-radius: var(--border-radius-sm);
-  --icon-padding: calc(var(--su-1) * 1.25);
-}
-.btn.size-sm:hover {
-  box-shadow: var(--hover-box-shadow-sm);
-}
-.btn.size-md {
-  height: calc(var(--average-height) * 1.5);
-  padding: 0 calc(var(--su-1) * 1.5);
-  font-size: var(--fs-md);
-  line-height: var(--lh-md);
-  border-width: var(--border-width-md);
-  border-radius: var(--border-radius-md);
-  --icon-padding: calc(var(--su-1) * 1.50);
-}
-.btn.size-md:hover {
-  box-shadow: var(--hover-box-shadow-md);
-}
-.btn.size-lg {
-  height: calc(var(--average-height) * 1.75);
-  padding: 0 calc(var(--su-1) * 1.75);
-  font-size: var(--fs-lg);
-  line-height: var(--lh-lg);
-  border-width: var(--border-width-lg);
-  border-radius: var(--border-radius-lg);
-  --icon-padding: calc(var(--su-1) * 1.75);
-}
-.btn.size-lg:hover {
-  box-shadow: var(--hover-box-shadow-lg);
-}
-.btn.size-xl {
-  height: calc(var(--average-height) * 2);
-  padding: 0 calc(var(--su-1) * 2);
-  font-size: var(--fs-xl);
-  line-height: var(--lh-xl);
-  border-width: var(--border-width-xl);
-  border-radius: var(--border-radius-xl);
-  --icon-padding: calc(var(--su-1) * 2.00);
-}
-.btn.size-xl:hover {
-  box-shadow: var(--hover-box-shadow-xl);
-}
-.btn.size-2xl {
-  height: calc(var(--average-height) * 2.25);
-  padding: 0 calc(var(--su-1) * 2.25);
-  font-size: var(--fs-2xl);
-  line-height: var(--lh-2xl);
-  border-width: var(--border-width-2xl);
-  border-radius: var(--border-radius-2xl);
-  --icon-padding: calc(var(--su-1) * 2.25);
-}
-.btn.size-2xl:hover {
-  box-shadow: var(--hover-box-shadow-2xl);
-}
-.btn.size-3xl {
-  height: calc(var(--average-height) * 2.5);
-  padding: 0 calc(var(--su-1) * 2.5);
-  font-size: var(--fs-3xl);
-  line-height: var(--lh-3xl);
-  border-width: var(--border-width-3xl);
-  border-radius: var(--border-radius-3xl);
-  --icon-padding: calc(var(--su-1) * 2.50);
-}
-.btn.size-3xl:hover {
-  box-shadow: var(--hover-box-shadow-3xl);
-}
-.btn.size-4xl {
-  height: calc(var(--average-height) * 2.75);
-  padding: 0 calc(var(--su-1) * 2.75);
-  font-size: var(--fs-4xl);
-  line-height: var(--lh-4xl);
-  border-width: var(--border-width-4xl);
-  border-radius: var(--border-radius-4xl);
-  --icon-padding: calc(var(--su-1) * 2.75);
-}
-.btn.size-4xl:hover {
-  box-shadow: var(--hover-box-shadow-4xl);
-}
-.btn.size-5xl {
-  height: calc(var(--average-height) * 3);
-  padding: 0 calc(var(--su-1) * 3);
-  font-size: var(--fs-5xl);
-  line-height: var(--lh-5xl);
-  border-width: var(--border-width-5xl);
-  border-radius: var(--border-radius-5xl);
-  --icon-padding: calc(var(--su-1) * 3.00);
-}
-.btn.size-5xl:hover {
-  box-shadow: var(--hover-box-shadow-5xl);
+:root {
+  /*--form-border-color: #000000;
+  --form-border-color-focus: #0000FF;
+  --form-border-color-error: #FF0033;
+  --form-border-color-disabled: #FF0033;
+  --form-background-color: #C4C4C4;
+  --form-background-color-focus: #FAFAFA;
+  --form-background-color-error: #FFBEBE;
+  --form-input-min-width: 30px;
+  --form-input-max-width: 100%;
+  --form-input-font-size: 16px;*/
 }
 
-.btn-group {
-  border: var(--base-border-width) solid transparent;
-  border-radius: var(--radius);
-  display: inline-flex;
-  box-shadow: var(--btn-shadow), 0px 0px 0 var(--form-border-focus);
-  height: 30px;
-  transition: all var(--transition-props);
-  overflow: hidden;
-  display: inline-tablegu;
-}
-.btn-group:hover {
-  border-color: var(--base);
-  box-shadow: var(--btn-shadow-hover), 2px 2px 0 var(--base);
-}
-.btn-group .btn {
-  border-top-width: 0;
-  border-bottom-width: 0;
-  border-radius: 0;
-  box-shadow: none;
-  height: 28px;
-  display: table-cell;
-  line-height: 28px;
-}
-.btn-group .btn:hover {
-  box-shadow: none;
-}
-.btn-group .btn:first-child {
-  border-left-width: 0;
-  border-radius: 0;
-}
-.btn-group .btn:last-child {
-  border-right-width: 0;
-  border-radius: 0;
-}
-.btn-group .btn.btn.btn-icon {
+.collection li, .collection a {
+  height: var(--average-height);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--transition-props);
+}
+.collection li.collapsible {
+  cursor: pointer;
+  height: auto;
+  /*a.child-open + ul {
+      height: auto;
+  }*/
+}
+.collection li.collapsible a, .collection li.collapsible ul {
+  width: 100%;
+}
+.collection li.collapsible a + ul {
+  background-color: red;
+  height: 0px;
+  overflow: hidden;
+  transition: all var(--transition-props);
+}
+.collection li.collapsible a.active + ul {
+  background-color: red;
+  overflow: hidden;
+  height: calc(var(--average-height) * var(--childrens));
+}
+.collection a {
+  background-color: blue;
 }
 
 /* /////////////////////////////////////////////////////////////////////////// */

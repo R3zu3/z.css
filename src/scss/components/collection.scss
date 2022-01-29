@@ -1,0 +1,61 @@
+/* /////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////// COLLECTION STYLES ///////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+:root {
+	/*--form-border-color: #000000;
+	--form-border-color-focus: #0000FF;
+	--form-border-color-error: #FF0033;
+	--form-border-color-disabled: #FF0033;
+	--form-background-color: #C4C4C4;
+	--form-background-color-focus: #FAFAFA;
+	--form-background-color-error: #FFBEBE;
+	--form-input-min-width: 30px;
+	--form-input-max-width: 100%;
+	--form-input-font-size: 16px;*/
+}
+
+//
+
+.collection {
+    li, a {
+        height: var(--average-height);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all var(--transition-props);
+    }
+
+    li.collapsible {
+        cursor: pointer;
+        height: auto;
+
+        a, ul {
+            width: 100%;
+        }
+
+        a + ul {
+            background-color: red;
+            height: 0px;
+            overflow: hidden;
+            transition: all var(--transition-props);
+        }
+
+        a.active + ul {
+            background-color: red;
+            overflow: hidden;
+            height: calc( var(--average-height) * var(--childrens) );
+        }
+
+        /*a.child-open + ul {
+            height: auto;
+        }*/
+    }
+
+    a {
+        background-color: blue;
+    }
+
+    
+}
