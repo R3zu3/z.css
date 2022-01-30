@@ -945,6 +945,7 @@ input[disabled], select[disabled], textarea[disabled] {
   opacity: 0.5;
 }
 input[type=radio], select[type=radio], textarea[type=radio] {
+  min-width: var(--average-height);
   border-radius: 100%;
   position: relative;
   margin: 0;
@@ -976,6 +977,7 @@ input[type=radio]:checked::before, select[type=radio]:checked::before, textarea[
 }
 input[type=checkbox], select[type=checkbox], textarea[type=checkbox] {
   background-color: var(--form-background-color);
+  min-width: var(--average-height);
 }
 input[type=checkbox]::before, select[type=checkbox]::before, textarea[type=checkbox]::before {
   content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.65684" y="9.89954" width="6" height="8" transform="rotate(45 5.65684 9.89954)" fill="black"/><rect x="19.799" y="4.24268" width="8" height="22" transform="rotate(45 19.799 4.24268)" fill="black"/><rect x="5.65685" y="12.7279" width="10" height="4" transform="rotate(45 5.65685 12.7279)" fill="white"/><rect x="19.799" y="7.07104" width="4" height="17.9963" transform="rotate(45 19.799 7.07104)" fill="white"/></svg>');
@@ -994,7 +996,8 @@ input[type=checkbox]:checked::before, select[type=checkbox]:checked::before, tex
   opacity: 1;
 }
 input[type=checkbox].switch, select[type=checkbox].switch, textarea[type=checkbox].switch {
-  width: 76px !important;
+  width: calc(var(--average-height) * 2);
+  min-width: calc(var(--average-height) * 2);
 }
 input[type=checkbox].switch::before, select[type=checkbox].switch::before, textarea[type=checkbox].switch::before {
   content: " ";
@@ -1031,6 +1034,7 @@ input[type=Image]:focus, select[type=Image]:focus, textarea[type=Image]:focus {
 input[type=color], select[type=color], textarea[type=color] {
   display: inline-block;
   overflow: hidden;
+  min-width: var(--average-height);
 }
 input[type=color]::-webkit-color-swatch, select[type=color]::-webkit-color-swatch, textarea[type=color]::-webkit-color-swatch {
   border: none;

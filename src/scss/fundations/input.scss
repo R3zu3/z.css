@@ -73,6 +73,7 @@ input, select, textarea {
 	// Input - Radio
 
 	&[type='radio'] {
+		min-width: var(--average-height);
 		border-radius: 100%;
 		position: relative;
 		margin: 0;
@@ -115,6 +116,7 @@ input, select, textarea {
 
 	&[type='checkbox'] {
 		background-color: var(--form-background-color);
+		min-width: var(--average-height);
 
 		&::before {
 			content: url('data:image/svg+xml;charset=UTF-8,<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.65684" y="9.89954" width="6" height="8" transform="rotate(45 5.65684 9.89954)" fill="black"/><rect x="19.799" y="4.24268" width="8" height="22" transform="rotate(45 19.799 4.24268)" fill="black"/><rect x="5.65685" y="12.7279" width="10" height="4" transform="rotate(45 5.65685 12.7279)" fill="white"/><rect x="19.799" y="7.07104" width="4" height="17.9963" transform="rotate(45 19.799 7.07104)" fill="white"/></svg>');
@@ -138,7 +140,8 @@ input, select, textarea {
 		// SWICTH
 
 		&.switch {
-			width: 76px !important;
+			width: calc(var(--average-height) * 2);
+			min-width: calc(var(--average-height) * 2);
 
 			&::before {
 				content: ' ';
@@ -189,6 +192,7 @@ input, select, textarea {
 	&[type='color'] {
 		display: inline-block;
 		overflow: hidden;
+		min-width: var(--average-height);
 		
 		&::-webkit-color-swatch {
 			border: none;
