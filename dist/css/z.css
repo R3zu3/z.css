@@ -1246,6 +1246,9 @@ select * {
   direction: ltr;
   text-indent: calc(var(--sp-1) * var(--nested-depth, 1));
 }
+.collection.no-indent li, .collection.no-indent a {
+  text-indent: 0;
+}
 .collection li.collapsible {
   border: none;
   cursor: pointer;

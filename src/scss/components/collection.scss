@@ -70,6 +70,12 @@
         }
     }
 
+    &.no-indent {
+        li, a {
+            text-indent: 0;
+        }
+    }
+
     li.collapsible {
         border: none;
         cursor: pointer;
