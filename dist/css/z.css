@@ -1208,6 +1208,10 @@ select * {
   border-width: var(--base-border-width);
   border-color: var(--form-border-color);
   transition: all var(--transition-props);
+  border-radius: var(--radius);
+}
+.collection .collection {
+  border-radius: 0;
 }
 .collection:first-child {
   border-style: solid;
@@ -1231,12 +1235,16 @@ select * {
   background: var(--collection-elem-bg-color);
   color: var(--color-palette-0);
   text-indent: calc(var(--sp-1) * var(--nested-depth, 1));
+  border-radius: 0px;
 }
 .collection li:last-child, .collection a:last-child {
   border-bottom: none;
 }
 .collection li:hover, .collection a:hover {
   box-shadow: var(--highlight-box-shadow) var(--form-border-color);
+}
+.collection > li.collapsible > a:not(.active):hover {
+  border-radius: 0px;
 }
 .collection.center-align li, .collection.center-align a {
   text-indent: 0;
@@ -1257,6 +1265,7 @@ select * {
   border: none;
   cursor: pointer;
   height: auto;
+  background-color: var(--collection-elem-bg-color);
 }
 .collection li.collapsible a, .collection li.collapsible ul {
   width: 100%;
@@ -1271,11 +1280,16 @@ select * {
   color: white;
   position: relative;
   z-index: 1;
+  border-width: 0px;
+}
+.collection li.collapsible a.active {
+  border-width: var(--base-border-width);
 }
 .collection li.collapsible a:hover {
   box-shadow: var(--highlight-box-shadow) var(--form-border-color);
   background-color: var(--form-border-color-focus);
   color: white;
+  border-radius: 0 0 0 var(--radius);
 }
 .collection li.collapsible a.active + ul {
   overflow: hidden;

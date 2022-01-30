@@ -14,6 +14,11 @@
     border-width: var(--base-border-width);
     border-color: var(--form-border-color);
     transition: all var(--transition-props);
+    border-radius: var(--radius);
+
+    .collection {
+        border-radius: 0;
+    }
 
     &:first-child {
         border-style: solid;
@@ -39,6 +44,7 @@
         background: var(--collection-elem-bg-color);
         color: var(--color-palette-0);
         text-indent: calc(var(--sp-1) * var(--nested-depth,1));
+        border-radius: 0px;
 
         &:last-child {
             border-bottom: none;
@@ -47,6 +53,10 @@
         &:hover {
             box-shadow: var(--highlight-box-shadow) var(--form-border-color);
         }
+    }
+
+    &> li.collapsible > a:not(.active):hover {
+        border-radius: 0px;
     }
 
     &.center-align {
@@ -80,6 +90,7 @@
         border: none;
         cursor: pointer;
         height: auto;
+        background-color: var(--collection-elem-bg-color);
 
         a, ul {
             width: 100%;
@@ -96,11 +107,17 @@
             color: white;
             position: relative;
             z-index: 1;
+            border-width: 0px;
+
+            &.active {
+                border-width: var(--base-border-width);
+            }
 
             &:hover {
                 box-shadow: var(--highlight-box-shadow) var(--form-border-color);
                 background-color: var(--form-border-color-focus);
                 color: white;
+                border-radius: 0 0 0 var(--radius);
             }
         }
 
