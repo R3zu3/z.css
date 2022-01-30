@@ -951,7 +951,7 @@ input[type=radio], select[type=radio], textarea[type=radio] {
   margin: 0;
 }
 input[type=radio]::before, select[type=radio]::before, textarea[type=radio]::before {
-  background: white;
+  background: var(--color-palette-4);
   content: " ";
   border-style: solid;
   border-width: var(--base-border-width);
@@ -1017,7 +1017,7 @@ input[type=checkbox].switch::after, select[type=checkbox].switch::after, textare
 }
 input[type=checkbox].switch:checked::before, select[type=checkbox].switch:checked::before, textarea[type=checkbox].switch:checked::before {
   left: calc(100% - (var(--average-height) - var(--base-border-width) * 2));
-  background: white;
+  background: var(--color-palette-4);
 }
 input[type=Image], select[type=Image], textarea[type=Image] {
   background: none;
@@ -1066,9 +1066,9 @@ input[type=range]::-ms-track, select[type=range]::-ms-track, textarea[type=range
 input[type=range]::-webkit-slider-thumb, select[type=range]::-webkit-slider-thumb, textarea[type=range]::-webkit-slider-thumb {
   /*-webkit-appearance: none;*/
   display: block;
-  background: black;
-  color: black;
-  border: solid 2px black;
+  background: var(--color-palette-0);
+  color: var(--color-palette-0);
+  border: solid 2px var(--color-palette-0);
 }
 input[type=file], select[type=file], textarea[type=file] {
   padding-left: 0;
@@ -1200,48 +1200,49 @@ select * {
 :root {
   --collection-elem-bg-color: var(--color-palette-3);
   --collection-c-elem-bg-color: var(--color-palette-2);
+  --collection-border-color: var(--color-palette-0);
+  --collection-border-color-focus: var(--color-palette-1);
 }
 
 .collection {
-  box-shadow: 0px 0px 0 var(--form-border-color);
-  background-color: var(--collection-background-color);
-  border-width: var(--base-border-width);
-  border-color: var(--form-border-color);
   transition: all var(--transition-props);
+  box-shadow: 0px 0px 0 var(--collection-border-color);
+  background-color: var(--collection-background-color);
   border-radius: var(--radius);
+  border-width: var(--base-border-width);
+  border-color: var(--collection-border-color);
 }
 .collection .collection {
   border-radius: 0;
 }
 .collection:first-child {
   border-style: solid;
-  /* box-shadow: none !important; */
   overflow: hidden;
 }
 .collection:first-child:hover {
-  box-shadow: var(--highlight-box-shadow) var(--form-border-color);
+  box-shadow: var(--highlight-box-shadow) var(--collection-border-color);
 }
 .collection li, .collection a {
-  height: var(--average-height);
+  transition: all var(--transition-props);
+  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-  transition: all var(--transition-props);
+  height: var(--average-height);
   border-bottom: solid;
+  border-radius: 0px;
   border-width: var(--base-border-width);
-  border-color: var(--form-border-color);
-  box-sizing: content-box;
+  border-color: var(--collection-border-color);
   background: var(--collection-elem-bg-color);
   color: var(--color-palette-0);
   text-indent: calc(var(--sp-1) * var(--nested-depth, 1));
-  border-radius: 0px;
 }
 .collection li:last-child, .collection a:last-child {
   border-bottom: none;
 }
 .collection li:hover, .collection a:hover {
-  box-shadow: var(--highlight-box-shadow) var(--form-border-color);
+  box-shadow: var(--highlight-box-shadow) var(--collection-border-color);
 }
 .collection > li.collapsible > a:not(.active):hover {
   border-radius: 0px;
@@ -1276,20 +1277,39 @@ select * {
   transition: all var(--transition-props), border-top 0s;
 }
 .collection li.collapsible a {
-  background: var(--collection-c-elem-bg-color);
-  color: white;
   position: relative;
   z-index: 1;
+  background: var(--collection-c-elem-bg-color);
+  color: var(--color-palette-4);
   border-width: 0px;
 }
 .collection li.collapsible a.active {
   border-width: var(--base-border-width);
 }
+.collection li.collapsible a.active::before {
+  border-left: solid 5px transparent;
+  border-bottom: solid 5px transparent;
+  border-top: solid 5px var(--color-palette-4);
+  border-right: solid 5px var(--color-palette-4);
+  margin-top: 5px;
+}
 .collection li.collapsible a:hover {
-  box-shadow: var(--highlight-box-shadow) var(--form-border-color);
-  background-color: var(--form-border-color-focus);
-  color: white;
+  box-shadow: var(--highlight-box-shadow) var(--collection-border-color);
+  background-color: var(--collection-border-color-focus);
+  color: var(--color-palette-4);
   border-radius: 0 0 0 var(--radius);
+}
+.collection li.collapsible a::before {
+  transition: all var(--transition-props);
+  content: " ";
+  position: absolute;
+  border-left: solid 5px var(--color-palette-4);
+  border-bottom: solid 5px var(--color-palette-4);
+  border-top: solid 5px transparent;
+  border-right: solid 5px transparent;
+  transform: rotate(-45deg);
+  right: var(--sp-1);
+  margin-top: -5px;
 }
 .collection li.collapsible a.active + ul {
   overflow: hidden;
