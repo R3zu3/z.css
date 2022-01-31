@@ -34,6 +34,7 @@
 
         $(this).find('> li.collapsible > a').click(function(){
             $(this).toggleClass('active');
+            $(this).parent('.collapsible').toggleClass('active');
         })
 
         // Determine the total number of items inside .collapsible element,

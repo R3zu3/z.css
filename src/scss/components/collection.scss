@@ -28,6 +28,7 @@
     .collection {
         border: none;
         box-shadow: none;
+        /*overflow: visible !important;*/
     }
 
     li, a {
@@ -128,6 +129,10 @@
             height: calc( (var(--average-height) * var(--childrens)) + (var(--childrens) * var(--base-border-width)) - var(--base-border-width));
         }
 
+        &.active > ul {
+            overflow: visible;
+        }
+
         &:first-child a {
             border-bottom: solid var(--collection-border-color) var(--base-border-width) !important;
         
@@ -147,6 +152,8 @@
             border-width: 0px;
 
             &::before {
+                width: 0;
+                height: 0;
                 transition: all var(--transition-props);
                 content: " ";
                 position: absolute;
@@ -180,8 +187,14 @@
         }
 
         &:not(:last-child) {
-            & > ul > li:last-child {
-                border-bottom: solid 2px black !important;
+            margin-top: 0px !important;
+
+            & > ul > li:last-child, & > ul > a:last-child {
+                border-bottom: solid var(--collection-border-color) var(--base-border-width) !important;
+                
+                &:hover {
+                    border-radius: 0px 0px 0px var(--radius) !important;
+                }
             }
 
             & > a {
@@ -192,6 +205,10 @@
                     border-radius: 0px 0px 0px var(--radius) !important;
                 }
             }
+        }
+
+        .collapsible.active + .collapsible {
+            margin-top: 2px !important;
         }
     }
 }
