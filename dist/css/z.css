@@ -165,6 +165,10 @@ label {
   align-items: center;
 }
 
+a[href] {
+  cursor: pointer;
+}
+
 /* /////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////// GRID STYLES //////////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////// */
@@ -1202,25 +1206,25 @@ select * {
   --collection-c-elem-bg-color: var(--color-palette-2);
   --collection-border-color: var(--color-palette-0);
   --collection-border-color-focus: var(--color-palette-1);
+  --collection-bg-color: var(--collection-elem-bg-color);
 }
 
 .collection {
   transition: all var(--transition-props);
   box-shadow: 0px 0px 0 var(--collection-border-color);
-  background-color: var(--collection-background-color);
+  background-color: var(--collection-bg-color);
   border-radius: var(--radius);
   border-width: var(--base-border-width);
   border-color: var(--collection-border-color);
-}
-.collection .collection {
-  border-radius: 0;
-}
-.collection:first-child {
   border-style: solid;
   overflow: hidden;
 }
-.collection:first-child:hover {
+.collection:hover {
   box-shadow: var(--highlight-box-shadow) var(--collection-border-color);
+}
+.collection .collection {
+  border: none;
+  box-shadow: none;
 }
 .collection li, .collection a {
   transition: all var(--transition-props);
@@ -1231,21 +1235,113 @@ select * {
   align-items: baseline;
   height: var(--average-height);
   border-bottom: solid;
-  border-radius: 0px;
+  border-radius: 0px 0px 0px 0px;
   border-width: var(--base-border-width);
   border-color: var(--collection-border-color);
   background: var(--collection-elem-bg-color);
   color: var(--color-palette-0);
   text-indent: calc(var(--sp-1) * var(--nested-depth, 1));
+  position: relative;
+  width: 100%;
 }
 .collection li:last-child, .collection a:last-child {
-  border-bottom: none;
+  border-bottom: none !important;
+  border-radius: 0px 0px 0px 0px !important;
 }
-.collection li:hover, .collection a:hover {
+.collection li:nth-child(0), .collection a:nth-child(0) {
+  z-index: 25;
+}
+.collection li:nth-child(1), .collection a:nth-child(1) {
+  z-index: 24;
+}
+.collection li:nth-child(2), .collection a:nth-child(2) {
+  z-index: 23;
+}
+.collection li:nth-child(3), .collection a:nth-child(3) {
+  z-index: 22;
+}
+.collection li:nth-child(4), .collection a:nth-child(4) {
+  z-index: 21;
+}
+.collection li:nth-child(5), .collection a:nth-child(5) {
+  z-index: 20;
+}
+.collection li:nth-child(6), .collection a:nth-child(6) {
+  z-index: 19;
+}
+.collection li:nth-child(7), .collection a:nth-child(7) {
+  z-index: 18;
+}
+.collection li:nth-child(8), .collection a:nth-child(8) {
+  z-index: 17;
+}
+.collection li:nth-child(9), .collection a:nth-child(9) {
+  z-index: 16;
+}
+.collection li:nth-child(10), .collection a:nth-child(10) {
+  z-index: 15;
+}
+.collection li:nth-child(11), .collection a:nth-child(11) {
+  z-index: 14;
+}
+.collection li:nth-child(12), .collection a:nth-child(12) {
+  z-index: 13;
+}
+.collection li:nth-child(13), .collection a:nth-child(13) {
+  z-index: 12;
+}
+.collection li:nth-child(14), .collection a:nth-child(14) {
+  z-index: 11;
+}
+.collection li:nth-child(15), .collection a:nth-child(15) {
+  z-index: 10;
+}
+.collection li:nth-child(16), .collection a:nth-child(16) {
+  z-index: 9;
+}
+.collection li:nth-child(17), .collection a:nth-child(17) {
+  z-index: 8;
+}
+.collection li:nth-child(18), .collection a:nth-child(18) {
+  z-index: 7;
+}
+.collection li:nth-child(19), .collection a:nth-child(19) {
+  z-index: 6;
+}
+.collection li:nth-child(20), .collection a:nth-child(20) {
+  z-index: 5;
+}
+.collection li:nth-child(21), .collection a:nth-child(21) {
+  z-index: 4;
+}
+.collection li:nth-child(22), .collection a:nth-child(22) {
+  z-index: 3;
+}
+.collection li:nth-child(23), .collection a:nth-child(23) {
+  z-index: 2;
+}
+.collection li:nth-child(24), .collection a:nth-child(24) {
+  z-index: 1;
+}
+.collection ul {
+  width: 100%;
+}
+.collection > a {
+  width: 100%;
+  border-radius: 0px 0px 0px 0px;
+}
+.collection > a:hover {
   box-shadow: var(--highlight-box-shadow) var(--collection-border-color);
+  background-color: var(--collection-border-color-focus);
+  color: var(--color-palette-4);
+  border-radius: 0px 0px 0px var(--radius);
+}
+.collection > a.active {
+  background-color: yellow;
+  color: black;
 }
 .collection > li.collapsible > a:not(.active):hover {
-  border-radius: 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 .collection.center-align li, .collection.center-align a {
   text-indent: 0;
@@ -1268,38 +1364,30 @@ select * {
   height: auto;
   background-color: var(--collection-elem-bg-color);
 }
-.collection li.collapsible a, .collection li.collapsible ul {
-  width: 100%;
-}
 .collection li.collapsible a + ul {
   height: 0px;
   overflow: hidden;
   transition: all var(--transition-props), border-top 0s;
 }
-.collection li.collapsible a {
-  position: relative;
-  z-index: 1;
+.collection li.collapsible a.active + ul {
+  height: calc(var(--average-height) * var(--childrens) + var(--childrens) * var(--base-border-width) - var(--base-border-width));
+}
+.collection li.collapsible:first-child a {
+  border-bottom: solid var(--collection-border-color) var(--base-border-width) !important;
+}
+.collection li.collapsible:first-child a.active {
+  border-bottom: solid var(--collection-border-color) var(--base-border-width) !important;
+}
+.collection li.collapsible:only-child a {
+  border-width: 0 !important;
+}
+.collection li.collapsible > a {
+  z-index: 25;
   background: var(--collection-c-elem-bg-color);
   color: var(--color-palette-4);
   border-width: 0px;
 }
-.collection li.collapsible a.active {
-  border-width: var(--base-border-width);
-}
-.collection li.collapsible a.active::before {
-  border-left: solid 5px transparent;
-  border-bottom: solid 5px transparent;
-  border-top: solid 5px var(--color-palette-4);
-  border-right: solid 5px var(--color-palette-4);
-  margin-top: 5px;
-}
-.collection li.collapsible a:hover {
-  box-shadow: var(--highlight-box-shadow) var(--collection-border-color);
-  background-color: var(--collection-border-color-focus);
-  color: var(--color-palette-4);
-  border-radius: 0 0 0 var(--radius);
-}
-.collection li.collapsible a::before {
+.collection li.collapsible > a::before {
   transition: all var(--transition-props);
   content: " ";
   position: absolute;
@@ -1311,9 +1399,31 @@ select * {
   right: var(--sp-1);
   margin-top: -5px;
 }
-.collection li.collapsible a.active + ul {
-  overflow: hidden;
-  height: calc(var(--average-height) * var(--childrens) + var(--childrens) * var(--base-border-width) - var(--base-border-width));
+.collection li.collapsible > a.active {
+  border-width: var(--base-border-width);
+}
+.collection li.collapsible > a.active::before {
+  border-left: solid 5px transparent;
+  border-bottom: solid 5px transparent;
+  border-top: solid 5px var(--color-palette-4);
+  border-right: solid 5px var(--color-palette-4);
+  margin-top: 5px;
+}
+.collection li.collapsible > a:hover {
+  box-shadow: var(--highlight-box-shadow) var(--collection-border-color);
+  background-color: var(--collection-border-color-focus);
+  color: var(--color-palette-4);
+  border-radius: 0px 0px 0px var(--radius);
+}
+.collection li.collapsible:not(:last-child) > ul > li:last-child {
+  border-bottom: solid 2px black !important;
+}
+.collection li.collapsible:not(:last-child) > a {
+  border-bottom: solid var(--collection-border-color) var(--base-border-width) !important;
+}
+.collection li.collapsible:not(:last-child) > a:hover {
+  box-shadow: var(--highlight-box-shadow) var(--collection-border-color);
+  border-radius: 0px 0px 0px var(--radius) !important;
 }
 
 /* /////////////////////////////////////////////////////////////////////////// */
